@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{95500441-91f8-47d5-be39-97baf3a1d9d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{55ba9668-e369-4ecd-a2bc-5027c07d2b4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KStream.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="JStringLib.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KAsciiFiler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KBinaryFiler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KDataObject.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KFileManager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KFileNameCipher.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KFiler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KOldEncodedFS.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KPackingFileSystem.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KRealFileSystem.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KTemplateInfo.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SFileRoot.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TrfMapper.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TrfMetaData.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XFileBasedFS.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XOREn.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TrfFiler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="KPackingFileMaker.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\kfile\KStream.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\IFileSystem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\JStringLib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KAsciiFiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KBinaryFiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KDataObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KEncodedFile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KFileManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KFileNameCipher.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KFiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KOldEncodedFS.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KPackingFileSystem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KRealFileSystem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KTemplateInfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\SFileRoot.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\SPatchData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\Sprite_TML.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\TrfMapper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\TrfMetaData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\XFileBasedFS.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\XOREn.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\nx10.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\TrfFiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kfile\KPackingFileMaker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

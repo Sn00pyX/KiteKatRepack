@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <ProjectGuid>{1D60AAF1-A76A-4C6A-9C2B-43EC04615E8E}</ProjectGuid>
+    <RootNamespace>CaptainHerlockServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+
+  <PropertyGroup Label="UserMacros" />
+
+  <PropertyGroup>
+    <_ProjectFileVersion>18.0.12106.202</_ProjectFileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;Library/Internal/include;Library/Internal/XModule;Library/Internal/XModule/Zlib;Library/Internal/XModule/Threading;Library/Internal/XModule/Base;Library/Internal/X2DGeometry;Library/Internal/_Utility;Library/Internal/Arcadia/Framework;Library/Internal/Arcadia;Library/Internal/LogClient;Library/Internal/String;Library/External/MD5;Common Files;Game;Game/Message;Game/Struct;Game/Define;Game/Memory;Game/NPCProc;Game/Resource;Game/DB;Game/Script;Game/Rule;Game/Skill;Game/Community;Game/World;Game/GameProc;Game/DaemonProc;Game/Logic;SecuritySolution;SecuritySolution/HackShield;SecuritySolution/GameGuard;SecuritySolution/XTrap;C:/Program Files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_XSERVER;_WIN32_WINNT=0x0502;WINVER=0x0502;NOMINMAX;_PROGRAM;_HAS_ITERATOR_DEBUGGING=0;_MEM_USAGE_DEBUG;_USE_UPDATE_CHARACTER_CHECKSUM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;Mswsock.lib;psapi.lib;shlwapi.lib;comsuppw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Library/Internal/XModule;Library/Internal/XModule/Zlib;Library/Library/lib/vc80/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>.;Library/Internal/include;Library/Internal/XModule;Library/Internal/XModule/Zlib;Library/Internal/XModule/Threading;Library/Internal/XModule/Base;Library/Internal/X2DGeometry;Library/Internal/_Utility;Library/Internal/Arcadia/Framework;Library/Internal/Arcadia;Library/Internal/LogClient;Library/Internal/String;Library/External/MD5;Common Files;Game;Game/Message;Game/Struct;Game/Define;Game/Memory;Game/NPCProc;Game/Resource;Game/DB;Game/Script;Game/Rule;Game/Skill;Game/Community;Game/World;Game/GameProc;Game/DaemonProc;Game/Logic;SecuritySolution;SecuritySolution/HackShield;SecuritySolution/GameGuard;SecuritySolution/XTrap;C:/Program Files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_XSERVER;_WIN32_WINNT=0x0502;WINVER=0x0502;NOMINMAX;_MEM_USAGE_DEBUG;_USE_UPDATE_CHARACTER_CHECKSUM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;Mswsock.lib;psapi.lib;shlwapi.lib;comsuppw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Library/Internal/XModule;Library/Internal/XModule/Zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <ItemGroup>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03a5c561934e089" />
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClInclude Include="Common Files\ErrorCode.h" />
+    <ClInclude Include="Library\External\MD5\global.h" />
+    <ClInclude Include="Library\External\MD5\md5.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArAdditionalProc.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArBoxCollision.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArcadiaServer.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArMove.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArObject.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArOption.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArRegion.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArScheduler.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArSchedulerObject.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArTime.h" />
+    <ClInclude Include="Library\Internal\Arcadia\ArType.h" />
+    <ClInclude Include="Library\Internal\Arcadia\Framework\ArcadiaCommandProc.h" />
+    <ClInclude Include="Library\Internal\Arcadia\Framework\ArcadiaFramework.h" />
+    <ClInclude Include="Library\Internal\Arcadia\Framework\Resource.h" />
+    <ClInclude Include="Library\Internal\LogClient\FileLog.h" />
+    <ClInclude Include="Library\Internal\LogClient\LogClient.h" />
+    <ClInclude Include="Library\Internal\LogClient\LogMessage.h" />
+    <ClInclude Include="Library\Internal\LogClient\LogStruct.h" />
+    <ClInclude Include="Library\Internal\String\nsl.h" />
+    <ClInclude Include="Library\Internal\String\nslreg.h" />
+    <ClInclude Include="Library\Internal\String\nsluni.h" />
+    <ClInclude Include="Library\Internal\X2DGeometry\X2DAlgorithm.h" />
+    <ClInclude Include="Library\Internal\X2DGeometry\X2DBasicTypes.h" />
+    <ClInclude Include="Library\Internal\X2DGeometry\X2DPathFinder.h" />
+    <ClInclude Include="Library\Internal\X2DGeometry\X2DPolygon.h" />
+    <ClInclude Include="Library\Internal\X2DGeometry\X2DQuadTree.h" />
+    <ClInclude Include="Library\Internal\XModule\Base\XSimpleProfiler.h" />
+    <ClInclude Include="Library\Internal\XModule\ExclusiveLogicLock.h" />
+    <ClInclude Include="Library\Internal\XModule\IAcceptor.h" />
+    <ClInclude Include="Library\Internal\XModule\ICipher.h" />
+    <ClInclude Include="Library\Internal\XModule\IConnection.h" />
+    <ClInclude Include="Library\Internal\XModule\IDatagram.h" />
+    <ClInclude Include="Library\Internal\XModule\ILock.h" />
+    <ClInclude Include="Library\Internal\XModule\INetworkEvent.h" />
+    <ClInclude Include="Library\Internal\XModule\IQueue.h" />
+    <ClInclude Include="Library\Internal\XModule\ISocketObject.h" />
+    <ClInclude Include="Library\Internal\XModule\IStream.h" />
+    <ClInclude Include="Library\Internal\XModule\myDC.h" />
+    <ClInclude Include="Library\Internal\XModule\rc4_cipher.h" />
+    <ClInclude Include="Library\Internal\XModule\SimpleCipher.h" />
+    <ClInclude Include="Library\Internal\XModule\Threading\XThread.h" />
+    <ClInclude Include="Library\Internal\XModule\TimeSyncer.h" />
+    <ClInclude Include="Library\Internal\XModule\w32_util.h" />
+    <ClInclude Include="Library\Internal\XModule\XAddr.h" />
+    <ClInclude Include="Library\Internal\XModule\XBasicCipher.h" />
+    <ClInclude Include="Library\Internal\XModule\XBossWorker.h" />
+    <ClInclude Include="Library\Internal\XModule\XConsole.h" />
+    <ClInclude Include="Library\Internal\XModule\XDes.h" />
+    <ClInclude Include="Library\Internal\XModule\XDijkstra.h" />
+    <ClInclude Include="Library\Internal\XModule\XDirectoryScanner.h" />
+    <ClInclude Include="Library\Internal\XModule\XEncrypt.h" />
+    <ClInclude Include="Library\Internal\XModule\XEnv.h" />
+    <ClInclude Include="Library\Internal\XModule\XException.h" />
+    <ClInclude Include="Library\Internal\XModule\XExceptionHandler.h" />
+    <ClInclude Include="Library\Internal\XModule\XFileUtil.h" />
+    <ClInclude Include="Library\Internal\XModule\XFlag.h" />
+    <ClInclude Include="Library\Internal\XModule\XGDIHelper.h" />
+    <ClInclude Include="Library\Internal\XModule\XIOCP.h" />
+    <ClInclude Include="Library\Internal\XModule\XIOCPAcceptor.h" />
+    <ClInclude Include="Library\Internal\XModule\XIOCPCommon.h" />
+    <ClInclude Include="Library\Internal\XModule\XIOCPConnection.h" />
+    <ClInclude Include="Library\Internal\XModule\XIOCPDatagram.h" />
+    <ClInclude Include="Library\Internal\XModule\XIOCPStruct.h" />
+    <ClInclude Include="Library\Internal\XModule\XLimit.h" />
+    <ClInclude Include="Library\Internal\XModule\XProfiler.h" />
+    <ClInclude Include="Library\Internal\XModule\XPropertySet.h" />
+    <ClInclude Include="Library\Internal\XModule\XQuadScanner.h" />
+    <ClInclude Include="Library\Internal\XModule\XRandom.h" />
+    <ClInclude Include="Library\Internal\XModule\XRc4Cipher.h" />
+    <ClInclude Include="Library\Internal\XModule\XSocket.h" />
+    <ClInclude Include="Library\Internal\XModule\XSTLUtil.h" />
+    <ClInclude Include="Library\Internal\XModule\XStrDESUtil.h" />
+    <ClInclude Include="Library\Internal\XModule\XStringUtil.h" />
+    <ClInclude Include="Library\Internal\XModule\XSyncAcceptor.h" />
+    <ClInclude Include="Library\Internal\XModule\XSyncStreamConnection.h" />
+    <ClInclude Include="Library\Internal\XModule\XUtil.h" />
+    <ClInclude Include="Library\Internal\XModule\Zlib\XZlibEncoder.h" />
+    <ClInclude Include="Library\Internal\XModule\Zlib\zconf.h" />
+    <ClInclude Include="Library\Internal\XModule\Zlib\zlib.h" />
+    <ClInclude Include="Library\Internal\_Utility\bits_scramble.h" />
+    <ClInclude Include="Library\Internal\_Utility\c_encint.h" />
+    <ClInclude Include="Library\Internal\_Utility\c_fixed.h" />
+    <ClInclude Include="Library\Internal\_Utility\khash.h" />
+    <ClInclude Include="Library\Internal\_Utility\XMemoryPool.h" />
+    <ClInclude Include="DBPerformanceTracker.h" />
+    <ClInclude Include="Game\Community\CommunityLoader.h" />
+    <ClInclude Include="Game\Community\CompeteBase.h" />
+    <ClInclude Include="Game\Community\CompeteManager.h" />
+    <ClInclude Include="Game\Community\GuildManager.h" />
+    <ClInclude Include="Game\Community\PartyManager.h" />
+    <ClInclude Include="Game\DaemonProc\AuctionManager.h" />
+    <ClInclude Include="Game\DaemonProc\BattleArena.h" />
+    <ClInclude Include="Game\DaemonProc\BattleArenaCommon.h" />
+    <ClInclude Include="Game\DaemonProc\BattleArenaForExercise.h" />
+    <ClInclude Include="Game\DaemonProc\BattleArenaInstance.h" />
+    <ClInclude Include="Game\DaemonProc\BattleArenaManager.h" />
+    <ClInclude Include="Game\DaemonProc\BattleArenaWithWaitQueue.h" />
+    <ClInclude Include="Game\DaemonProc\GlobalVariableManager.h" />
+    <ClInclude Include="Game\DaemonProc\HuntaholicManager.h" />
+    <ClInclude Include="Game\DaemonProc\ItemCollector.h" />
+    <ClInclude Include="Game\DaemonProc\RankingManager.h" />
+    <ClInclude Include="Game\DaemonProc\RoamingManager.h" />
+    <ClInclude Include="Game\DaemonProc\ScheduledCommandManager.h" />
+    <ClInclude Include="Game\DaemonProc\ThreadSafeIntMap.h" />
+    <ClInclude Include="Game\Db\ADOConnection.h" />
+    <ClInclude Include="Game\Db\DB_Commands.h" />
+    <ClInclude Include="Game\Db\GameDBManager.h" />
+    <ClInclude Include="Game\Define\Constant.h" />
+    <ClInclude Include="Game\Define\Extern.h" />
+    <ClInclude Include="Game\Define\ItemType.h" />
+    <ClInclude Include="Game\Define\UID.h" />
+    <ClInclude Include="Game\GameNetwork.h" />
+    <ClInclude Include="Game\GameProc.h" />
+    <ClInclude Include="Game\GameProc\MixBase.h" />
+    <ClInclude Include="Game\GameProc\MixManager.h" />
+    <ClInclude Include="Game\GameProc\RandomManager.h" />
+    <ClInclude Include="Game\Logic\Damage.h" />
+    <ClInclude Include="Game\Memory\DBAllocator.h" />
+    <ClInclude Include="Game\Memory\GameAllocator.h" />
+    <ClInclude Include="Game\Message\GameMessage.h" />
+    <ClInclude Include="Game\Message\MessageType.h" />
+    <ClInclude Include="Game\Message\SendMessage.h" />
+    <ClInclude Include="Game\NPCProc\FieldPropManager.h" />
+    <ClInclude Include="Game\NPCProc\NPCProc.h" />
+    <ClInclude Include="Game\Resource\AuctionBase.h" />
+    <ClInclude Include="Game\Resource\BattleArenaBase.h" />
+    <ClInclude Include="Game\Resource\BitmapBox.h" />
+    <ClInclude Include="Game\Resource\ContentLoader.h" />
+    <ClInclude Include="Game\Resource\ContentStruct.h" />
+    <ClInclude Include="Game\Resource\CreatureBase.h" />
+    <ClInclude Include="Game\Resource\FieldPropBase.h" />
+    <ClInclude Include="Game\Resource\GameContent.h" />
+    <ClInclude Include="Game\Resource\GameDBUtil.h" />
+    <ClInclude Include="Game\Resource\GameType.h" />
+    <ClInclude Include="Game\Resource\ItemBase.h" />
+    <ClInclude Include="Game\Resource\ItemEffect.h" />
+    <ClInclude Include="Game\Resource\ItemInstance.h" />
+    <ClInclude Include="Game\Resource\KStream.h" />
+    <ClInclude Include="Game\Resource\KTypes.h" />
+    <ClInclude Include="Game\Resource\MapDefine.h" />
+    <ClInclude Include="Game\Resource\MonsterBase.h" />
+    <ClInclude Include="Game\Resource\NPCBase.h" />
+    <ClInclude Include="Game\Resource\QuestBase.h" />
+    <ClInclude Include="Game\Resource\QuestInstance.h" />
+    <ClInclude Include="Game\Resource\ScriptDefine.h" />
+    <ClInclude Include="Game\Resource\SkillBase.h" />
+    <ClInclude Include="Game\Resource\TerrainPropInfo.h" />
+    <ClInclude Include="Game\Resource\TerrainSeamlessWorldInfo.h" />
+    <ClInclude Include="Game\Resource\TimeUtil.h" />
+    <ClInclude Include="Game\Resource\TitleBase.h" />
+    <ClInclude Include="Game\Resource\TitleInstance.h" />
+    <ClInclude Include="Game\Resource\UIDManager.h" />
+    <ClInclude Include="Game\Resource\Util.h" />
+    <ClInclude Include="Game\Rule\AgeLimitRule.h" />
+    <ClInclude Include="Game\Rule\GameRule.h" />
+    <ClInclude Include="Game\Script\lauxlib.h" />
+    <ClInclude Include="Game\Script\lua.h" />
+    <ClInclude Include="Game\Script\lualib.h" />
+    <ClInclude Include="Game\Script\LuaVM.h" />
+    <ClInclude Include="Game\Script\ScriptCommon.h" />
+    <ClInclude Include="Game\Script\ScriptGuild.h" />
+    <ClInclude Include="Game\Script\ScriptItem.h" />
+    <ClInclude Include="Game\Script\ScriptMisc.h" />
+    <ClInclude Include="Game\Script\ScriptNPC.h" />
+    <ClInclude Include="Game\Script\ScriptPlayer.h" />
+    <ClInclude Include="Game\Script\ScriptQuest.h" />
+    <ClInclude Include="Game\Skill\StructSkill.h" />
+    <ClInclude Include="Game\Skill\StructSkillProp.h" />
+    <ClInclude Include="Game\Struct\PlayerData.h" />
+    <ClInclude Include="Game\Struct\StructBase.h" />
+    <ClInclude Include="Game\Struct\StructCreature.h" />
+    <ClInclude Include="Game\Struct\StructEventItemManager.h" />
+    <ClInclude Include="Game\Struct\StructFieldProp.h" />
+    <ClInclude Include="Game\Struct\StructGold.h" />
+    <ClInclude Include="Game\Struct\StructInventory.h" />
+    <ClInclude Include="Game\Struct\StructItem.h" />
+    <ClInclude Include="Game\Struct\StructMisc.h" />
+    <ClInclude Include="Game\Struct\StructMonster.h" />
+    <ClInclude Include="Game\Struct\StructNPC.h" />
+    <ClInclude Include="Game\Struct\StructPet.h" />
+    <ClInclude Include="Game\Struct\StructPlayer.h" />
+    <ClInclude Include="Game\Struct\StructProc.h" />
+    <ClInclude Include="Game\Struct\StructQuest.h" />
+    <ClInclude Include="Game\Struct\StructQuestManager.h" />
+    <ClInclude Include="Game\Struct\StructRoamer.h" />
+    <ClInclude Include="Game\Struct\StructSummon.h" />
+    <ClInclude Include="Game\Struct\StructTitle.h" />
+    <ClInclude Include="Game\Struct\StructTitleCondition.h" />
+    <ClInclude Include="Game\Struct\StructTitleManager.h" />
+    <ClInclude Include="Game\world\ChannelManager.h" />
+    <ClInclude Include="Game\world\DungeonManager.h" />
+    <ClInclude Include="Game\World\LocationLoader.h" />
+    <ClInclude Include="Game\World\StructWorldLocation.h" />
+    <ClInclude Include="SecuritySolution\GameGuard\ggsrv25.h" />
+    <ClInclude Include="SecuritySolution\GameGuard\x64\ggsrv25.h" />
+    <ClInclude Include="SecuritySolution\HackShield\AntiCpXSvr.h" />
+    <ClInclude Include="SecuritySolution\ISecuritySolutionImpl.h" />
+    <ClInclude Include="SecuritySolution\XGameGuard.h" />
+    <ClInclude Include="SecuritySolution\XHackShield.h" />
+    <ClInclude Include="SecuritySolution\XSecuritySolutionManager.h" />
+    <ClInclude Include="SecuritySolution\XTrap\Xtrap_S_Interface.h" />
+    <ClInclude Include="SecuritySolution\XXTrap.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VersionNo.h" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="Library\External\MD5\md5c.cpp" />
+    <ClCompile Include="Library\Internal\Arcadia\ArcadiaServer.cpp" />
+    <ClCompile Include="Library\Internal\Arcadia\ArOption.cpp" />
+    <ClCompile Include="Library\Internal\Arcadia\ArScheduler.cpp" />
+    <ClCompile Include="Library\Internal\Arcadia\ArTime.cpp" />
+    <ClCompile Include="Library\Internal\Arcadia\Framework\ArcadiaCommandProc.cpp" />
+    <ClCompile Include="Library\Internal\Arcadia\Framework\ArcadiaFramework.cpp" />
+    <ClCompile Include="Library\Internal\LogClient\FileLog.cpp" />
+    <ClCompile Include="Library\Internal\LogClient\LogClient.cpp" />
+    <ClCompile Include="Library\Internal\String\nsluni.cpp" />
+    <ClCompile Include="Library\Internal\XModule\Base\XSimpleProfiler.cpp" />
+    <ClCompile Include="Library\Internal\XModule\ExclusiveLogicLock.cpp" />
+    <ClCompile Include="Library\Internal\XModule\IAcceptor.cpp" />
+    <ClCompile Include="Library\Internal\XModule\IQueue.cpp" />
+    <ClCompile Include="Library\Internal\XModule\myDC.cpp" />
+    <ClCompile Include="Library\Internal\XModule\Threading\XThread.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XBasicCipher.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XConsole.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XDes.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XDirectoryScanner.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XEncrypt.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XEnv.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XException.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XExceptionHandler.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XFileUtil.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XIOCP.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XIOCPAcceptor.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XIOCPConnection.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XIOCPDatagram.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XProfiler.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XPropertySet.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XRandom.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XRc4Cipher.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XStrDESUtil.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XStringUtil.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XSyncStreamConnection.cpp" />
+    <ClCompile Include="Library\Internal\XModule\XUtil.cpp" />
+    <ClCompile Include="Library\Internal\XModule\Zlib\XZlibEncoder.cpp" />
+
+    <ClCompile Include="CaptainHerlockServer.cpp" />
+    <ClCompile Include="DBPerformanceTracker.cpp" />
+    <ClCompile Include="Game\Community\CompeteBase.cpp" />
+    <ClCompile Include="Game\Community\CompeteManager.cpp" />
+    <ClCompile Include="Game\Community\GuildLoader.cpp" />
+    <ClCompile Include="Game\Community\GuildManager.cpp" />
+    <ClCompile Include="Game\Community\PartyLoader.cpp" />
+    <ClCompile Include="Game\Community\PartyManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\AuctionManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\BattleArena.cpp" />
+    <ClCompile Include="Game\DaemonProc\BattleArenaCommon.cpp" />
+    <ClCompile Include="Game\DaemonProc\BattleArenaForExercise.cpp" />
+    <ClCompile Include="Game\DaemonProc\BattleArenaInstance.cpp" />
+    <ClCompile Include="Game\DaemonProc\BattleArenaManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\BattleArenaWithWaitQueue.cpp" />
+    <ClCompile Include="Game\DaemonProc\GlobalVariableManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\HuntaholicManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\ItemCollector.cpp" />
+    <ClCompile Include="Game\DaemonProc\RankingManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\RoamingManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\ScheduledCommandManager.cpp" />
+    <ClCompile Include="Game\DaemonProc\ThreadSafeIntMap.cpp" />
+    <ClCompile Include="Game\Db\ADOConnection.cpp" />
+    <ClCompile Include="Game\Db\DB_Auction.cpp" />
+    <ClCompile Include="Game\Db\DB_BattleArena.cpp" />
+    <ClCompile Include="Game\Db\DB_CharacterList.cpp" />
+    <ClCompile Include="Game\Db\DB_ClearAutoAccoutList.cpp" />
+    <ClCompile Include="Game\Db\DB_ClearDungeonRaidRecord.cpp" />
+    <ClCompile Include="Game\Db\DB_CommercialItemStorage.cpp" />
+    <ClCompile Include="Game\Db\DB_CreateCharacter.cpp" />
+    <ClCompile Include="Game\Db\DB_DeleteCharacter.cpp" />
+    <ClCompile Include="Game\Db\DB_DeleteGuild.cpp" />
+    <ClCompile Include="Game\Db\DB_DeleteParty.cpp" />
+    <ClCompile Include="Game\Db\DB_DeleteQuest.cpp" />
+    <ClCompile Include="Game\Db\DB_DeleteQuestCoolTime.cpp" />
+    <ClCompile Include="Game\Db\DB_EraseUserFromAutoAccountList.cpp" />
+    <ClCompile Include="Game\Db\DB_EventArea.cpp" />
+    <ClCompile Include="Game\Db\DB_Farm.cpp" />
+    <ClCompile Include="Game\Db\DB_Friends.cpp" />
+    <ClCompile Include="Game\Db\DB_GlobalVariable.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertCash.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertFavor.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertGuild.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertItem.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertParty.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertPet.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertQuest.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertQuestCoolTime.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertRandomQuest.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertSkill.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertSummon.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertTitle.cpp" />
+    <ClCompile Include="Game\Db\DB_InsertTitleCondition.cpp" />
+    <ClCompile Include="Game\Db\DB_Login.cpp" />
+    <ClCompile Include="Game\Db\DB_Logout.cpp" />
+    <ClCompile Include="Game\Db\DB_RandomItem.cpp" />
+    <ClCompile Include="Game\Db\DB_Ranking.cpp" />
+    <ClCompile Include="Game\Db\DB_ReadMaxItemIndex.cpp" />
+    <ClCompile Include="Game\Db\DB_ReadStorageList.cpp" />
+    <ClCompile Include="Game\Db\DB_SetGuild.cpp" />
+    <ClCompile Include="Game\Db\DB_SetGuildLeader.cpp" />
+    <ClCompile Include="Game\Db\DB_SetParty.cpp" />
+    <ClCompile Include="Game\Db\DB_SetPartyLeader.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateCharacter.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateClientInfo.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateDungeon.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateDungeonOwnerGuild.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateDungeonRaidTime.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateEventItemDropInfo.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateEventItemSupplyInfo.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateItem.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateItemCode.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateItemOwner.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateLaunchedScheduledCommand.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdatePet.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateQuest.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateQuestCoolTime.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateRandomQuest.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateSkill.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateStorageGold.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateSummon.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateTitle.cpp" />
+    <ClCompile Include="Game\Db\DB_UpdateTitleCondition.cpp" />
+    <ClCompile Include="Game\Db\GameDBManager.cpp" />
+    <ClCompile Include="Game\Define\Extern.cpp" />
+    <ClCompile Include="Game\GameDraw.cpp" />
+    <ClCompile Include="Game\GameMain.cpp" />
+    <ClCompile Include="Game\GameNetwork.cpp" />
+    <ClCompile Include="Game\GameProc.cpp" />
+    <ClCompile Include="Game\GameProc\MixManager.cpp" />
+    <ClCompile Include="Game\GameProc\RandomManager.cpp" />
+    <ClCompile Include="Game\Logic\Damage.cpp" />
+    <ClCompile Include="Game\Memory\DBAllocator.cpp" />
+    <ClCompile Include="Game\Memory\GameAllocator.cpp" />
+    <ClCompile Include="Game\Message\GameMessage.cpp" />
+    <ClCompile Include="Game\Message\OnTrade.cpp" />
+    <ClCompile Include="Game\Message\SendBattleArenaMessage.cpp" />
+    <ClCompile Include="Game\Message\SendMessage.cpp" />
+    <ClCompile Include="Game\NPCProc\FieldPropManager.cpp" />
+    <ClCompile Include="Game\NPCProc\MonsterAI.cpp" />
+    <ClCompile Include="Game\NPCProc\NPCAI.cpp" />
+    <ClCompile Include="Game\NPCProc\NPCProc.cpp" />
+    <ClCompile Include="Game\NPCProc\NPCRespawn.cpp" />
+    <ClCompile Include="Game\NPCProc\PetAI.cpp" />
+    <ClCompile Include="Game\NPCProc\SummonAI.cpp" />
+    <ClCompile Include="Game\Resource\AllowedCommandListLoader.cpp" />
+    <ClCompile Include="Game\Resource\AuctionBase.cpp" />
+    <ClCompile Include="Game\Resource\AuctionCategoryLoader.cpp" />
+    <ClCompile Include="Game\Resource\AuctionLoader.cpp" />
+    <ClCompile Include="Game\Resource\AutoAuctionLoader.cpp" />
+    <ClCompile Include="Game\Resource\AutoAuctionRegistrationInfoLoader.cpp" />
+    <ClCompile Include="Game\Resource\BattleArenaLoader.cpp" />
+    <ClCompile Include="Game\Resource\BitmapLoader.cpp" />
+    <ClCompile Include="Game\Resource\ChannelLoader.cpp" />
+    <ClCompile Include="Game\Resource\CreatureEnhanceLoader.cpp" />
+    <ClCompile Include="Game\Resource\CreatureFarmLoader.cpp" />
+    <ClCompile Include="Game\Resource\DeathmatchLoader.cpp" />
+    <ClCompile Include="Game\Resource\DungeonLoader.cpp" />
+    <ClCompile Include="Game\Resource\ETCLoader.cpp" />
+    <ClCompile Include="Game\Resource\FieldPropLoader.cpp" />
+    <ClCompile Include="Game\Resource\FieldPropSwitchingLoader.cpp" />
+    <ClCompile Include="Game\Resource\GameContent.cpp" />
+    <ClCompile Include="Game\Resource\GameDBUtil.cpp" />
+    <ClCompile Include="Game\Resource\HuntaholicLoader.cpp" />
+    <ClCompile Include="Game\Resource\InstanceDungeonLoader.cpp" />
+    <ClCompile Include="Game\Resource\ItemLoader.cpp" />
+    <ClCompile Include="Game\Resource\KStream.cpp" />
+    <ClCompile Include="Game\Resource\MapLoader.cpp" />
+    <ClCompile Include="Game\Resource\MixLoader.cpp" />
+    <ClCompile Include="Game\Resource\MonsterBase.cpp" />
+    <ClCompile Include="Game\Resource\MonsterLoader.cpp" />
+    <ClCompile Include="Game\Resource\NPCLoader.cpp" />
+    <ClCompile Include="Game\Resource\QuestLoader.cpp" />
+    <ClCompile Include="Game\Resource\RandomLoader.cpp" />
+    <ClCompile Include="Game\Resource\RankingLoader.cpp" />
+    <ClCompile Include="Game\Resource\RoamingLoader.cpp" />
+    <ClCompile Include="Game\Resource\ScheduledCommandLoader.cpp" />
+    <ClCompile Include="Game\Resource\SecretDungeonLoader.cpp" />
+    <ClCompile Include="Game\Resource\SkillLoader.cpp" />
+    <ClCompile Include="Game\Resource\StringLoader.cpp" />
+    <ClCompile Include="Game\Resource\TerrainPropInfo.cpp" />
+    <ClCompile Include="Game\Resource\TerrainSeamlessWorldInfo.cpp" />
+    <ClCompile Include="Game\Resource\TimeUtil.cpp" />
+    <ClCompile Include="Game\Resource\TitleLoader.cpp" />
+    <ClCompile Include="Game\Resource\UIDManager.cpp" />
+    <ClCompile Include="Game\Rule\AgeLimitRule.cpp" />
+    <ClCompile Include="Game\Rule\GameRule.cpp" />
+    <ClCompile Include="Game\Script\LuaVM.cpp" />
+    <ClCompile Include="Game\Script\ScriptCommon.cpp" />
+    <ClCompile Include="Game\Script\ScriptGuild.cpp" />
+    <ClCompile Include="Game\Script\ScriptItem.cpp" />
+    <ClCompile Include="Game\Script\ScriptMisc.cpp" />
+    <ClCompile Include="Game\Script\ScriptNPC.cpp" />
+    <ClCompile Include="Game\Script\ScriptPlayer.cpp" />
+    <ClCompile Include="Game\Script\ScriptQuest.cpp" />
+    <ClCompile Include="Game\Skill\StructSkill.cpp" />
+    <ClCompile Include="Game\Skill\StructSkillProp.cpp" />
+    <ClCompile Include="Game\Struct\CalculateStat.cpp" />
+    <ClCompile Include="Game\Struct\StructBase.cpp" />
+    <ClCompile Include="Game\Struct\StructCreature.cpp" />
+    <ClCompile Include="Game\Struct\StructEventItemManager.cpp" />
+    <ClCompile Include="Game\Struct\StructFieldProp.cpp" />
+    <ClCompile Include="Game\Struct\StructInventory.cpp" />
+    <ClCompile Include="Game\Struct\StructItem.cpp" />
+    <ClCompile Include="Game\Struct\StructMisc.cpp" />
+    <ClCompile Include="Game\Struct\StructMonster.cpp" />
+    <ClCompile Include="Game\Struct\StructNPC.cpp" />
+    <ClCompile Include="Game\Struct\StructPet.cpp" />
+    <ClCompile Include="Game\Struct\StructPlayer.cpp" />
+    <ClCompile Include="Game\Struct\StructProc.cpp" />
+    <ClCompile Include="Game\Struct\StructQuest.cpp" />
+    <ClCompile Include="Game\Struct\StructQuestManager.cpp" />
+    <ClCompile Include="Game\Struct\StructRoamer.cpp" />
+    <ClCompile Include="Game\Struct\StructSummon.cpp" />
+    <ClCompile Include="Game\Struct\StructTitle.cpp" />
+    <ClCompile Include="Game\Struct\StructTitleCondition.cpp" />
+    <ClCompile Include="Game\Struct\StructTitleManager.cpp" />
+    <ClCompile Include="Game\world\ChannelManager.cpp" />
+    <ClCompile Include="Game\world\DungeonManager.cpp" />
+    <ClCompile Include="Game\world\InstanceDungeonManager.cpp" />
+    <ClCompile Include="Game\World\LocationLoader.cpp" />
+    <ClCompile Include="Game\World\StructWorldLocation.cpp" />
+    <ClCompile Include="SecuritySolution\XGameGuard.cpp" />
+    <ClCompile Include="SecuritySolution\XHackShield.cpp" />
+    <ClCompile Include="SecuritySolution\XSecuritySolutionManager.cpp" />
+    <ClCompile Include="SecuritySolution\XTrap\XTrap4Server.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="SecuritySolution\XXTrap.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Image Include="Library\Internal\Arcadia\Framework\ArcadiaFramework.bmp" />
+    <Image Include="Library\Internal\Arcadia\Framework\ArcadiaFramework.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ResourceCompile Include="Library\Internal\Arcadia\Framework\ArcadiaFramework.rc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="AntiCpXSvr.dll" />
+    <None Include="Document\BillingDBScheme.sql" />
+    <None Include="Document\BillingProcedure.sql" />
+    <None Include="Document\BillingProcedure_For_BillingDB.sql" />
+    <None Include="Document\BillingProcedure_Free-SecretFreePass.sql" />
+    <None Include="Document\Content.sql" />
+    <None Include="Document\DBScheme.sql" />
+    <None Include="Document\DELETE_2ND_SKILL.SQL" />
+    <None Include="Document\InitializeCharacterSkillAndJob.sql" />
+    <None Include="Document\InitializeCharacterSkillOnly.sql" />
+    <None Include="Document\InitializeSummonSkillAndLevel.sql" />
+    <None Include="Document\SetDungeonOwner.sql" />
+    <None Include="Document\SetSummonLevel.sql" />
+    <None Include="Document\StoredProcedure.sql" />
+    <None Include="Document\StoredProcedure_For_TestServer.sql" />
+    <None Include="SecuritySolution\GameGuard\csauth2.cfg" />
+    <None Include="SecuritySolution\GameGuard\ggauth60.dll" />
+    <None Include="SecuritySolution\GameGuard\x64\csauth2.cfg" />
+    <None Include="SecuritySolution\GameGuard\x64\ggauth60.dll" />
+    <None Include="SecuritySolution\HackShield\3N.mhe" />
+    <None Include="SecuritySolution\HackShield\HShield.dat" />
+    <None Include="SecuritySolution\HackShield\HSPub.key" />
+    <None Include="XTrap4Server.dll" />
+    <None Include="XTrap4Server_x64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Text Include="Document\Lock.txt" />
+    <Text Include="Document\ObjectLifeTime.txt" />
+    <Text Include="Document\TODO_List.txt" />
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

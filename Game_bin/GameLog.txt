@@ -1,0 +1,6 @@
+2026/09/20 14:47:42 DB COM ERROR(Thread:0, HRESULT:80040E14, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_ReadCommercialStorageList(dbo.smp_read_purchased_item_list) : Maximum stored procedure, function, trigger, or view nesting level exceeded (limit 32).
+2026/09/20 17:56:13 onDeInit is called with SDS 0x00000000.
+2026/09/20 21:05:10 onDeInit is called with SDS 0x00000000.
+2026/09/20 23:17:51 onDeInit is called with SDS 0x00000000.
+2026/09/21 20:24:40 onDeInit is called with SDS 0x00000000.
+2026/09/21 21:00:47 onDeInit is called with SDS 0x00000000.

@@ -1,0 +1,1 @@
+RappelzCmdLauncher.exe SFrame.exe /auth_ip:127.0.0.1 /auth_port:4615 /help_url_w:611 /help_url_h:625 /locale:windows-1251 /country:CN /cash /gift /commercial_shop /layout_dir:6 /layout_auto:0 /cash_url_w:800 /cash_url_h:631 /use_nprotect:0 /notenc

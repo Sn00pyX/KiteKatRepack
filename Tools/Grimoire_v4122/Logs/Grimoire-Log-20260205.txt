@@ -1,0 +1,54 @@
+[09:14:58 Information] Starting Grimoire...
+[09:14:58 Verbose] 14 configuration types available.
+[09:14:58 Verbose] 1 configurations loaded for: Grim
+[09:14:58 Verbose] 1 configurations loaded for: Tab
+[09:14:58 Verbose] 1 configurations loaded for: DB
+[09:14:58 Verbose] 1 configurations loaded for: RDB
+[09:14:58 Verbose] 1 configurations loaded for: Data
+[09:14:58 Verbose] 1 configurations loaded for: Hash
+[09:14:58 Verbose] 1 configurations loaded for: Market
+[09:14:58 Verbose] 1 configurations loaded for: Log
+[09:14:58 Verbose] 1 configurations loaded for: Flag
+[09:14:58 Verbose] 1 configurations loaded for: Item
+[09:14:58 Verbose] 1 configurations loaded for: Enums
+[09:14:58 Verbose] 1 configurations loaded for: DumpUpdater
+[09:14:58 Verbose] 1 configurations loaded for: SPR
+[09:14:58 Verbose] 1 configurations loaded for: Localization
+[09:14:58 Information] 66 configurations loaded from Config in 066ms
+[09:14:58 Information] Tab Manager initialized!
+[09:14:58 Information] Localization Manager Started.
+[09:14:58 Debug] 3 locales found in:
+	- D:\KitekatRepack\Tools\Grimoire_v4122\Localization
+[09:14:58 Debug] Global rightToLeft defined.
+[09:14:58 Debug] Font detected.
+	- Family: Microsoft Sans Serif
+	- Style: Underline
+	- Size: 8.25
+[09:14:58 Debug] 55 control configurations loaded from locale: ar-ME located at:
+	- D:\KitekatRepack\Tools\Grimoire_v4122\Localization\ar-ME.xml
+[09:14:58 Debug] 3 locales found in:
+	- D:\KitekatRepack\Tools\Grimoire_v4122\Localization
+[09:14:58 Debug] Global rightToLeft defined.
+[09:14:58 Debug] Font detected.
+	- Family: Microsoft Sans Serif
+	- Style: Underline
+	- Size: 8.25
+[09:14:58 Debug] 55 control configurations loaded from locale: en-US located at:
+	- D:\KitekatRepack\Tools\Grimoire_v4122\Localization\en-US.xml
+[09:14:58 Debug] 3 locales found in:
+	- D:\KitekatRepack\Tools\Grimoire_v4122\Localization
+[09:14:58 Debug] Global rightToLeft defined.
+[09:14:58 Debug] Font detected.
+	- Family: Microsoft Sans Serif
+	- Style: Underline
+	- Size: 8
+[09:14:58 Debug] 55 control configurations loaded from locale: fr-FR located at:
+	- D:\KitekatRepack\Tools\Grimoire_v4122\Localization\fr-FR.xml
+[09:14:58 Information] 3 loaded from:
+	- D:\KitekatRepack\Tools\Grimoire_v4122\Localization
+[09:14:58 Warning] Control: tabs is not configured! It will default.
+[09:14:58 Debug] 6 control configurations loaded for gui: Main
+[09:15:11 Warning] Control: extStatus is not configured! It will default.
+[09:15:11 Debug] 6 control configurations loaded for tab: Data
+[09:15:11 Information] New DATA tab named Data Utility created!
+[09:16:23 Information] Grimoire shutting down...

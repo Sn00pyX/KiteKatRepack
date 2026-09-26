@@ -1,0 +1,50 @@
+2025/10/22 08:48:52 DB COM ERROR(Thread:0, HRESULT:80040E4D, GUID:0C733A8B-2A1C-11CE-ADE5-00AA0044773D) : GameDBManager(GameDBManager::initDBConnection()) : Login failed for user 'kitekat_user'.
+2025/10/22 08:58:03 DB COM ERROR(Thread:0, HRESULT:80004005, GUID:0C733A8B-2A1C-11CE-ADE5-00AA0044773D) : GameDBManager(GameDBManager::initDBConnection()) : Login failed for user 'kitekat_user'.  Reason: The password of the account must be changed.
+2025/10/22 09:00:20 onDeInit is called with SDS 0x00000000.
+2025/10/22 18:16:33 onDeInit is called with SDS 0x00000000.
+2025/10/26 05:20:06 DB COM ERROR(Thread:0, HRESULT:80040E37, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_ReadAccountAuthorityInfo(dbo.smp_update_secroute_info) : Invalid object name 'Telecaster952.dbo.SecrouteInfo'.
+2025/10/26 05:20:06 DB COM ERROR(Thread:0, HRESULT:80040E37, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_GetCommercialStorageInfo(dbo.smp_check_purchased_item) : Invalid object name 'Telecaster952.dbo.PaidItem'.
+2025/10/30 10:33:50 onDeInit is called with SDS 0x00000000.
+2025/10/30 11:01:36 onDeInit is called with SDS 0x00000000.
+2025/10/30 11:19:49 onDeInit is called with SDS 0x00000000.
+2025/10/30 11:52:08 DB COM ERROR(Thread:0, HRESULT:800A0CC1, GUID:00001564-0000-0010-8000-00AA006D2EA4) : DB_Login(dbo.smp_read_item_list) : Item cannot be found in the collection corresponding to the requested name or ordinal.
+2025/10/30 12:07:04 DB COM ERROR(Thread:0, HRESULT:800A0CC1, GUID:00001564-0000-0010-8000-00AA006D2EA4) : DB_Login(dbo.smp_read_state_list) : Item cannot be found in the collection corresponding to the requested name or ordinal.
+2025/10/30 12:28:23 DB COM ERROR(Thread:1, HRESULT:80040E37, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_ReadAccountAuthorityInfo(dbo.smp_update_secroute_info) : Invalid object name 'Telecaster952.dbo.SecrouteInfo'.
+2025/10/30 12:28:23 DB COM ERROR(Thread:1, HRESULT:80040E37, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_GetCommercialStorageInfo(dbo.smp_check_purchased_item) : Invalid object name 'Telecaster952.dbo.PaidItem'.
+2025/10/30 12:31:41 DB COM ERROR(Thread:1, HRESULT:80040E37, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_ReadAccountAuthorityInfo(dbo.smp_update_secroute_info) : Invalid object name 'Telecaster952.dbo.SecrouteInfo'.
+2025/10/30 12:32:29 DB COM ERROR(Thread:1, HRESULT:80040E37, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_ReadAccountAuthorityInfo(dbo.smp_read_authority_info) : Invalid object name 'Telecaster952.dbo.AuthorityInfo'.
+2025/10/30 12:35:32 onDeInit is called with SDS 0x00000000.
+2025/10/30 12:49:42 onDeInit is called with SDS 0x00000000.
+2025/10/30 12:59:00 onDeInit is called with SDS 0x00000000.
+2025/10/30 13:31:26 onDeInit is called with SDS 0x00000000.
+2025/10/30 17:28:31 onDeInit is called with SDS 0x00000000.
+2025/10/30 17:34:07 onDeInit is called with SDS 0x00000000.
+2025/10/30 17:39:26 onDeInit is called with SDS 0x00000000.
+2025/10/30 18:49:54 DB COM ERROR(Thread:1, HRESULT:800A0CC1, GUID:00001564-0000-0010-8000-00AA006D2EA4) : DB_Login(dbo.smp_read_state_list) : Item cannot be found in the collection corresponding to the requested name or ordinal.
+2025/10/30 18:58:20 DB COM ERROR(Thread:2, HRESULT:80040E14, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_UpdateState(dbo.smp_update_state: @IN_SID: 4) : Procedure or function smp_update_state has too many arguments specified.
+2025/10/30 19:04:12 DB COM ERROR(Thread:1, HRESULT:80040E14, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_UpdateState(dbo.smp_update_state: @IN_SID: 4) : Procedure or function smp_update_state has too many arguments specified.
+2025/10/30 19:11:49 DB COM ERROR(Thread:1, HRESULT:80040E14, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_UpdateState(dbo.smp_update_state: @IN_SID: 4) : Procedure or function smp_update_state has too many arguments specified.
+2025/10/30 20:12:01 onDeInit is called with SDS 0x00000000.
+2025/10/30 20:15:06 onDeInit is called with SDS 0x00000000.
+2026/01/13 19:52:07 DB COM ERROR(Thread:2, HRESULT:80040E14, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_UpdateState(dbo.smp_update_state: @IN_SID: 4) : Procedure or function smp_update_state has too many arguments specified.
+2026/01/13 20:01:32 onDeInit is called with SDS 0x00000000.
+2026/01/14 01:19:41 onDeInit is called with SDS 0x00000000.
+2026/01/14 11:21:11 onDeInit is called with SDS 0x00000000.
+2026/01/14 17:29:55 onDeInit is called with SDS 0x00000000.
+2026/01/14 19:35:27 onDeInit is called with SDS 0x00000000.
+2026/01/14 19:38:08 DB COM ERROR(Thread:0, HRESULT:80004005, GUID:0C733A63-2A1C-11CE-ADE5-00AA0044773D) : DB_ReadCommercialStorageList(dbo.smp_read_purchased_item_list) : Database 'BILLING' does not exist. Make sure that the name is entered correctly.
+2026/01/14 20:32:05 onDeInit is called with SDS 0x00000000.
+2026/01/14 20:46:40 onDeInit is called with SDS 0x00000000.
+2026/01/14 21:24:34 onDeInit is called with SDS 0x00000000.
+2026/01/15 18:13:52 DB COM ERROR(Thread:0, HRESULT:80004005, GUID:0C733A8B-2A1C-11CE-ADE5-00AA0044773D) : GameDBManager(GameDBManager::initDBConnection()) : Cannot open database "TelecasterKitekat" requested by the login. The login failed.
+2026/01/15 18:59:37 onDeInit is called with SDS 0x00000000.
+2026/01/15 19:01:49 onDeInit is called with SDS 0x00000000.
+2026/01/15 19:05:13 onDeInit is called with SDS 0x00000000.
+2026/01/19 18:34:22 DB COM ERROR(Thread:0, HRESULT:80004005, GUID:0C733A8B-2A1C-11CE-ADE5-00AA0044773D) : GameDBManager(GameDBManager::initDBConnection()) : Cannot open database "TelecasterKitekat" requested by the login. The login failed.
+2026/01/19 18:39:00 onDeInit is called with SDS 0x00000000.
+2026/01/19 20:53:16 onDeInit is called with SDS 0x00000000.
+2026/01/21 18:12:37 onDeInit is called with SDS 0x00000000.
+2026/01/23 16:59:07 onDeInit is called with SDS 0x00000000.
+2026/01/29 02:04:20 onDeInit is called with SDS 0x00000000.
+2026/02/04 08:07:06 onDeInit is called with SDS 0x00000000.
+2026/02/05 06:08:36 onDeInit is called with SDS 0x00000000.

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{2a0d33a9-ad76-4408-94b2-1a7b0646885f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\smtp">
+      <UniqueIdentifier>{584e1061-32d2-4a81-aeac-e22a600a6c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\http">
+      <UniqueIdentifier>{96ebad40-4579-4362-94af-80616484157f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\http2">
+      <UniqueIdentifier>{132d1d31-ac7e-4137-b22a-834dd1b4ddc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{f530bdc0-aadf-4386-8a09-d77dc79dbb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\smtp">
+      <UniqueIdentifier>{05476c00-d18f-4248-a048-53d8dd6f2ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\http">
+      <UniqueIdentifier>{52f328ff-d7a3-4f23-a4b4-cf5ca3c76a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\http2">
+      <UniqueIdentifier>{be797dfd-e558-4b8a-bcc5-893c78429411}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SMTPConnectionEx.cpp">
+      <Filter>source\smtp</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpAsyncDelegate.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpBuffer.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpClient.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpContent.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpRequest.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpRequestParam.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpResponseHeader.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpSyncDelegate.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpURL.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XHttpUtil.cpp">
+      <Filter>source\http</Filter>
+    </ClCompile>
+    <ClCompile Include="XInternet.cpp">
+      <Filter>source\http2</Filter>
+    </ClCompile>
+    <ClCompile Include="XInternetSession2.cpp">
+      <Filter>source\http2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XHttpAsyncDelegate.h">
+      <Filter>source\http</Filter>
+    </ClInclude>
+    <ClInclude Include="XHttpSyncDelegate.h">
+      <Filter>source\http</Filter>
+    </ClInclude>
+    <ClInclude Include="XHttpUtil.h">
+      <Filter>source\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\SMTPConnectionEx.h">
+      <Filter>include\smtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XHttpBuffer.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XHttpClient.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XHttpContent.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XHttpRequest.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XHttpRequestParam.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XHttpResponseHeader.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XHttpURL.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XInternet.h">
+      <Filter>include\http2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\internet\XInternetSession2.h">
+      <Filter>include\http2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

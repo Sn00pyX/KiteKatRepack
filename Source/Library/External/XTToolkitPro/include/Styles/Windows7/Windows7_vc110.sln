@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "indows7"", ".\Windows7_vc110.vcxproj", "{54588531-6978-7224-1631-145844311662}"
+EndProject

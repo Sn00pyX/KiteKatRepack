@@ -1,0 +1,45 @@
+#Database configuration
+auth.db.server:127.0.0.1
+auth.db.port:1433
+auth.db.name:AuthKitekat
+auth.db.account:kitekat_user
+
+auth.db.salt:kitekatsalt
+auth.db.cryptedpassword:45560000030060f9e5657b1a3a9ce621c0c53cb355623f181bbadc9af95481e4e4e4f50a991fe4
+
+#Enable traffic dump, will be in traffic_log folder (default off)
+#trafficdump.enable:true
+
+#Where clients will connect (this is default values)
+auth.clients.ip:0.0.0.0
+auth.clients.port:4615
+
+#Where the gameserver will connect (this is default values)
+auth.gameserver.ip:127.0.0.1
+auth.gameserver.port:4502
+
+#Upload configuration, use "upload" folder for guild icons
+upload.dir=C:\inetpub\wwwroot\gicon
+upload.clients.ip=0.0.0.0
+upload.clients.port=4617
+
+#Use port 5000 for the guild icon mini webserver
+upload.iconserver.ip=0.0.0.0
+upload.iconserver.port:5000
+
+#Where the gameserver will connect (these are default values)
+upload.gameserver.ip=127.0.0.1
+upload.gameserver.port:4616
+
+#Only for SQL Server: speed up selects with NOLOCK
+sql.db_account.query:SELECT * FROM Account WITH(NOLOCK) WHERE account = ? AND password = ?;
+
+#Configure security password query. If this query return at least one row, the security password is accepted
+#sql.db_securitynocheck.query:SELECT securty_no FROM Accounts WHERE login_name = ? AND securty_no = ?;
+#You can also use a stored procedure
+#sql.db_securitynocheck.query:{CALL smp_new_check_security(?, ?)}
+
+#Logging level
+core.log.level:debug
+core.log.consolelevel:info
+auth.clients.maxpublicserveridx:5

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{cf27cc96-f275-45ac-b5ff-8edcc015523f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{c6a8992c-bf00-4094-84b1-f7b728fe7e7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IAcceptor.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XAsyncStreamConnection.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XIOCP.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XIOCPAcceptor.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XIOCPConnection.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XIOCPDatagram.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XNetworkUtil.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XSyncStreamConnection.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\network\IAcceptor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\IConnection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\IDatagram.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\INetworkEvent.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\ISocketObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\IStream.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XAddr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XAsyncStreamConnection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XIOCP.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XIOCPAcceptor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XIOCPConnection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XIOCPDatagram.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XIOCPStruct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XNetworkUtil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XSocket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XSyncAcceptor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\network\XSyncStreamConnection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

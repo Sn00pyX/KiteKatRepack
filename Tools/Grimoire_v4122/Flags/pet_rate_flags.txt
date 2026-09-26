@@ -1,0 +1,7 @@
+RATE_RARE = 1 << 0, // Rare or not
+RATE_SHOVELABLE = 1 << 1, // Whether shoveling is possible
+RATE_ITEM_COLLECTABLE = 1 << 2, // Whether it is possible to automatically pick up items
+RATE_WEIGHT_1000 = 1 << 3, // Increase possession (1000) (ep 9.x)
+RATE_WEIGHT_2000 = 1 << 4, // Increase possession (2000) (ep 9.x)
+RATE_WEIGHT_4000 = 1 << 5, // Increase possession (4000) (ep 9.x)
+RATE_WEIGHT_8000 = 1 << 6, // Increase possession (8000) (ep 9.x)

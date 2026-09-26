@@ -1,0 +1,32 @@
+﻿Cant Donate
+Cant Store
+Cant Enhance
+Consumable
+Is Card
+Is Socket
+Stackable
+Needs Target
+Warp
+Cant Trade
+Cant Sell
+Quest Item
+Cant Use Overweight
+Cash Item
+Cant Use Riding
+Cant Drop
+Cant Use Moving
+Quest Distribute
+Cant Use Sitting
+Cant Use in Raid
+Cant Use in HV
+Cant Use in Event Area
+Cant Use in Ursa
+Only Use in Ursa
+Cant Use in Death Match
+Only Use in Death Match
+Cant Erase
+Only Use Sitting
+Cant Use in Secret Dungeon
+Cant Use in Battle Arena
+Cant Decompose
+Is Identifiable

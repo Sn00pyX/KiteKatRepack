@@ -1,0 +1,65 @@
+* Lock 전략에 관해서
+
+
+1. 게임의 기본락은 '지역 lock' 이다. 이것을 위해 ArcadiaServer 에 다음과 같이 정의되어 있다.
+ 
+	ArcadiaLock	LockObjectWithVisibleRange( const ArObject *pObject );
+	ArcadiaLock	LockObject( const ArObject *pObject );
+	void		UnLock( ArcadiaLock * pLockHandle );
+	
+   절대 중복되어 Lock 되어서는 안된다.
+ 
+   사용의 편의를 위해 ArcadiaAutoLock 을 제공한다. 이것은 std::auto_ptr 정도로 이해하면 된다.
+   ArcadiaAutoLock 의 Life time 동안 lock 이 걸리고 자동으로 풀린다.사용예는 다음과 같다. 
+   
+   void DoSomething()
+   {
+       ArcadiaAutoLock _lock( ArcadiaServer::Instance().LockWithVisibleRange( rx1, ry1, rx2, ry2 ) );
+       
+       [...]
+   }
+
+
+
+2. 아이템을 다룰경우 지역 lock 만으로 가능하다. 왜냐하면 모든 아이템은 월드상의 특정 위치에
+   존재하기 때문이다. 모든 아이템은 플레이어가 소유중 이거나 월드 어딘가에 떨어져 있기 때문에
+   모두 위치를 갖게 된다. 해서 다음과 같이 lock 을 걸 수 있다.
+
+   1. 플레이어가 소지한 아이템의 경우 플레이어의 위치에 Lock() 하는것으로 가능
+   
+   2. 땅에 떨어져 있는 아이템의 경우 해당 위치에 Lock() 하는것으로 가능.
+
+
+   
+3. 다음과 같은 경우에는 특정 지역 lock 으로는 불충분하다.
+
+   1. 파티 관련 operation (파티원들은 사방에 떨어져 있어서 지역 Lock 으로는 불가능)
+   2. 귓속말/공지등의 채팅 관련 operation (마찬가지)
+   
+   이경우 다음과 같이 해결한다.
+   
+   1. 파티관련 operation 은 모두 PartyManager 에서 관장한다. 모든 opeation 은 PartyManager
+      를 통해서 하게 되며 PartyManager 는 내부적으로 Lock 을 관리한다.
+   
+   2. 귓속말 / 전체공지등 플레이어 리스트에 Lock 이 필요할 경우 PlayerListLock 을 건다.
+      이는 StructPlayer 에서 제공되며 오퍼레이션은 다음과 같다.
+      
+    static void						DoEachPlayer( ArObjectFunctor & _fo );
+	static void						DoPlayer( AR_HANDLE handle, ArObjectFunctor & _fo );
+   
+   
+   3. 기타 월드 지역 전체에 Lock 이 필요한 경우 '모든 월드' 에 lock 을 건다.
+      이는 ArcadiaServer 에서 제공되며 오퍼레이션은 다음과 같다.
+   
+   ArcadiaLock	LockWorld();   
+  
+  
+   
+4. 여러개의 Lock 을 혼용해서 사용시에는 데드락에 특별히 주의해야 한다. 가령 아래와 같은경우는 피할것.
+
+   플레이어 근처의 지역 락 -> 파티 락 -> 타겟 플레이어 근처의 지역 락
+   
+   참고. 지역 락을 2회 이상 호출할경우 debug 버젼에서는 assert 가 뜨게 된다. release 버젼에서는 콘솔에 워닝이 기록된다.
+   
+   다중 lock 을 피하기 위해서는 어떤 메소드가 어떤 lock 을 하는지 주의깊게 알아둘 필요가 있다.
+   (가령 SendLocalChatMessage() 은 호출시 해당 지역에 락을 건다)

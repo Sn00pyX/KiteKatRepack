@@ -1,0 +1,113 @@
+** Arcadia 엔진 객체의 라이프 타임관리
+
+														written by Testors
+																2004/06/29
+
+
+
+
+* 기반 클래스
+
+
+	게임상의 객체는 모두 ArSchedulerObject 혹은 ArObject 로부터 상속받는다.
+	각 기반 클래스의 역할은 다음과 같다.
+
+	. ArSchedulerObject
+	 
+	정해진 priority 에 따라 주기적으로 onProcess() 를 처리할 수 있게 한다.
+	이것을 이용해 "주기적으로 플레이어의 HP 를 증가시킨다" 혹은 "NPC 가 일정 
+	시간마다 주변을 배회한다" 등의 처리를 할 수 있다.
+	이 처리는 ArScheduler 에서 관장한다.
+	   
+	. ArObject
+	 
+	ArObject 의 기반 클래스는 ArSchedulerObject 이므로 ArObject 로부터 상속받는
+	다면 ArSchedulerObject 를 상속 받을 필요가 없다. ArObject 는 '위치정보' 를
+	가진 오브젝트이다. ArObject 타입은 ArcadiaServer 의 월드 위에 위치할 수 있다
+	   
+
+	아래는 Player 구조체의 계층도 예제 이다.
+
+
+		ArSchedulerObject
+				|		
+			ArObject	
+				|		
+		  GameObject	
+				|
+		StructCreature
+				|		
+		  StructPlayer
+
+   
+* 객체의 life cycle
+ 
+
+	게임상에서의 객체는 필요에 따라 생성되고 삭제되기도 한다.
+	객체를 삭제할 때에는 다음 경우를 주의하여야 한다.
+	
+	
+	1. 객체가 ArScheduler 에 등록되어서 priority 를 가지고 활동중이 아닌가?
+	
+		스케쥴러에 등록된 객체를 임의로 지워버릴 경우 추후 스케쥴러에서 해당 객체를
+		참조시 crash 가 발생하게 된다. 이를 위해서 ArcadiaServer::DeleteObject() 가
+		제공된다. 이에 등록해 놓으면 추후 스케쥴러가 ProcDelete() 를 호출해 안전하
+		게 객체를 지울 수 있도록 해준다.
+	
+	2. 미결된 DB 쿼리가 남아있지 않은가?
+	
+		DB 쿼리가 Pending 된 상태에서 객체를 지워 버리면 추후 DB thread 가 쿼리문을
+		생성하기 위해 해당 객체를 참조하는 과정에서 crash 가 발생하게 된다.
+		
+	3. 다른 쓰레드에서 참조중이지는 않은가?
+	
+		GameObject::m_nRefCount 를 참조. (TODO:설명 추가하자)
+		
+
+
+* how to delete without crash?
+
+	이러한 객체의 삭제를 안전하게 하기 위해 ArSchedulerObject 는 다음의 인터페이스를
+	제공한다.
+	
+	struct ArSchedulerObject
+	{
+		[...]
+		virtual bool ProcDelete();
+		virtual bool IsDeleteable();
+		[...]
+	}
+	
+	스케쥴러에게 객체의 delete 를 요청했을 경우, 객체는 스케쥴러의 '지워야할 객체 
+	리스트' 에 추가된다. 그리고 스케쥴러는 일정 시간마다 해당 객체의 삭제를 시도한다.
+	
+	스케쥴러는 객체를 삭제하기 이전에 객체의 IsDeleteable() 을 호출한 뒤 결과가 참일
+	경우에 ProcDelete() 를 호출한다. ( * delete 연산자를 사용하는 것이 아니다. )
+	만약 IsDeleteable() 의 결과가 참이 아닐경우 스케쥴러는 해당 객체를 일정 시간뒤에
+	다시 삭제 시도를 하게 된다.	
+	
+	그러므로 객체의 삭제를 스케쥴러를 통해서 하기 위해서는 위으 두 인터페이스를 꼭
+	구현해 주어야 한다. 가령 미결된 DB 쿼리가 남아있는경우 삭제를 하지 말아야 한다면
+	그 코드의 구현은 다음과 같다.
+	
+	struct StructProp : ArSchedulerObject
+	{
+		[...]
+		
+		bool ProcDelete()
+		{
+			delete this;
+			
+			return true;
+		}
+		
+		bool IsDeleteable()
+		{
+			if( m_nQueryCount ) return false;
+			
+			return true;
+		}
+		
+		[...]
+	}
+	

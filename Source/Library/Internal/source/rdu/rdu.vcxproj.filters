@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{0cc9cc1f-0e1e-4e0e-9e1f-8c618b6364ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5f1e49a9-f77e-4857-94ac-adeca9f781ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ColumnSchema.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexSchema.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="RDUReader.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="RDURow.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="RDUWriter.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\rdu\ColumnSchema.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\IndexSchema.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\RDUFileHeader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\RDUReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\RDURow.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\RDUWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\SchemaCommon.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\StatusFlag.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\ColumnDataGetter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\rdu\SupportDECIMALToDouble.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

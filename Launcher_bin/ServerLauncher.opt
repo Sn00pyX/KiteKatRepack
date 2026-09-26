@@ -1,0 +1,13 @@
+N services.count:1
+
+S services.01_file_name:C:\Users\root\Desktop\GameEngine\Game_bin\CaptainHerlockServer.exe
+S services.01_service_name:Game Server
+S services.01_working_dir:C:\Users\root\Desktop\GameEngine\Game_bin
+
+N:console.port:22346
+S:console.allow_ip:127.0.0.1
+S:console.ip:127.0.0.1
+
+S:console._password:455600000300ec3110bb3130e9d211edf03fc4abd20fec336a14aed2123612e8ef139d29490f1212120a08a61a12
+
+S:app.name:RevolutionLauncher

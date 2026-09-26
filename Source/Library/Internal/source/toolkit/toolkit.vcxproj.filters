@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{af17e877-84c0-4a0a-a5c6-047d3f074954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b8ae03a4-180d-45f1-af80-14c718907a29}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ExclusiveLogicLock.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="IQueue.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="myDC.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="nsluni.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessUsage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_function.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeTickCount.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XConsole.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XDirectoryScanner.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XEnv.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XFileUtil.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XRandom.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XStringUtil.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XThread.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XVerifyProcessSigner.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XModuleInfo.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadUsage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XThreadMonitor.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\toolkit\bits_scramble.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_args.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_array.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_bits.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_encint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_fixed.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_hidint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_property.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_symbol.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\c_unimempool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\ExclusiveLogicLock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\ILock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\IQueue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\IRecordSet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\khash.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\myDC.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\nfl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\nsl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\nslreg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\nsluni.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\ProcessUsage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\safe_function.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\SafeTickCount.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\TimeSyncer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XBossWorker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XConsole.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XDijkstra.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XDirectoryScanner.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XEnv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XFileUtil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XFlag.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XGDIHelper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XMemoryPool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XPropertySet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XQuadScanner.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XRandom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XRWLock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XSTLUtil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XStringUtil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XThread.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XVerifyProcessSigner.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\Singleton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\csv_parser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XModuleInfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\ThreadUsage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\toolkit\XThreadMonitor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

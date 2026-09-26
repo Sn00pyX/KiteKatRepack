@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7FF4316-D473-41D4-804E-43C660582DEF}</ProjectGuid>
+    <RootNamespace>Arcadia</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\lib\vc2010\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\lib\vc2010\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\lib\vc2010\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\lib\vc2010\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)_x64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)d_x64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\External\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\External\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\External\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\External\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ExclusiveLogicLock.cpp" />
+    <ClCompile Include="ThreadUsage.cpp" />
+    <ClCompile Include="XThreadMonitor.cpp" />
+    <ClCompile Include="XModuleInfo.cpp" />
+    <ClCompile Include="IQueue.cpp" />
+    <ClCompile Include="myDC.cpp" />
+    <ClCompile Include="nsluni.cpp" />
+    <ClCompile Include="ProcessUsage.cpp" />
+    <ClCompile Include="safe_function.cpp" />
+    <ClCompile Include="SafeTickCount.cpp" />
+    <ClCompile Include="XConsole.cpp" />
+    <ClCompile Include="XDirectoryScanner.cpp" />
+    <ClCompile Include="XEnv.cpp" />
+    <ClCompile Include="XFileUtil.cpp" />
+    <ClCompile Include="XRandom.cpp" />
+    <ClCompile Include="XStringUtil.cpp" />
+    <ClCompile Include="XThread.cpp" />
+    <ClCompile Include="XVerifyProcessSigner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\toolkit\bits_scramble.h" />
+    <ClInclude Include="..\..\include\toolkit\csv_parser.h" />
+    <ClInclude Include="..\..\include\toolkit\c_args.h" />
+    <ClInclude Include="..\..\include\toolkit\c_array.h" />
+    <ClInclude Include="..\..\include\toolkit\c_bits.h" />
+    <ClInclude Include="..\..\include\toolkit\c_encint.h" />
+    <ClInclude Include="..\..\include\toolkit\c_fixed.h" />
+    <ClInclude Include="..\..\include\toolkit\c_hidint.h" />
+    <ClInclude Include="..\..\include\toolkit\c_property.h" />
+    <ClInclude Include="..\..\include\toolkit\c_symbol.h" />
+    <ClInclude Include="..\..\include\toolkit\c_unimempool.h" />
+    <ClInclude Include="..\..\include\toolkit\ExclusiveLogicLock.h" />
+    <ClInclude Include="..\..\include\toolkit\ThreadUsage.h" />
+    <ClInclude Include="..\..\include\toolkit\XThreadMonitor.h" />
+    <ClInclude Include="..\..\include\toolkit\XModuleInfo.h" />
+    <ClInclude Include="..\..\include\toolkit\ILock.h" />
+    <ClInclude Include="..\..\include\toolkit\IQueue.h" />
+    <ClInclude Include="..\..\include\toolkit\IRecordSet.h" />
+    <ClInclude Include="..\..\include\toolkit\khash.h" />
+    <ClInclude Include="..\..\include\toolkit\myDC.h" />
+    <ClInclude Include="..\..\include\toolkit\nfl.h" />
+    <ClInclude Include="..\..\include\toolkit\nsl.h" />
+    <ClInclude Include="..\..\include\toolkit\nslreg.h" />
+    <ClInclude Include="..\..\include\toolkit\nsluni.h" />
+    <ClInclude Include="..\..\include\toolkit\ProcessUsage.h" />
+    <ClInclude Include="..\..\include\toolkit\safe_function.h" />
+    <ClInclude Include="..\..\include\toolkit\SafeTickCount.h" />
+    <ClInclude Include="..\..\include\toolkit\Singleton.h" />
+    <ClInclude Include="..\..\include\toolkit\TimeSyncer.h" />
+    <ClInclude Include="..\..\include\toolkit\XBossWorker.h" />
+    <ClInclude Include="..\..\include\toolkit\XConsole.h" />
+    <ClInclude Include="..\..\include\toolkit\XDijkstra.h" />
+    <ClInclude Include="..\..\include\toolkit\XDirectoryScanner.h" />
+    <ClInclude Include="..\..\include\toolkit\XEnv.h" />
+    <ClInclude Include="..\..\include\toolkit\XFileUtil.h" />
+    <ClInclude Include="..\..\include\toolkit\XFlag.h" />
+    <ClInclude Include="..\..\include\toolkit\XGDIHelper.h" />
+    <ClInclude Include="..\..\include\toolkit\XMemoryPool.h" />
+    <ClInclude Include="..\..\include\toolkit\XPropertySet.h" />
+    <ClInclude Include="..\..\include\toolkit\XQuadScanner.h" />
+    <ClInclude Include="..\..\include\toolkit\XRandom.h" />
+    <ClInclude Include="..\..\include\toolkit\XRWLock.h" />
+    <ClInclude Include="..\..\include\toolkit\XSTLUtil.h" />
+    <ClInclude Include="..\..\include\toolkit\XStringUtil.h" />
+    <ClInclude Include="..\..\include\toolkit\XThread.h" />
+    <ClInclude Include="..\..\include\toolkit\XVerifyProcessSigner.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

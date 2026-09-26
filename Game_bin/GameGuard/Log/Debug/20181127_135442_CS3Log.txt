@@ -1,0 +1,111 @@
+[11:27-13:54:42] [N] [InitCSAuth3] -- Log start -- 
+[11:27-13:54:42] [N] [InitCSAuth3] Config path : GameGuard\csauth3.cfg
+[11:27-13:54:42] [N] [InitCSAuth3] Protocol : 2, Module : 34, ggsrv30 : 1
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] ConfigAutoLoadPeriod : 30
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] MinimumUserCountForActivation : 30
+[11:27-13:54:42] [N] [CCSAuth3Info] PeriodForStatisticsSurvey : 15
+[11:27-13:54:42] [N] [CCSAuth3Info] PercentageForUpdate : 50
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] UseCurrentDirectory : 0
+[11:27-13:54:42] [N] [CCSAuth3Info] DataBase : GameGuard\DataBase
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] NormalLog : GameGuard\Log/Normal
+[11:27-13:54:42] [N] [CCSAuth3Info] UpdateLog : GameGuard\Log/Update
+[11:27-13:54:42] [N] [CCSAuth3Info] DebugLog : GameGuard\Log/Debug
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] UseNormalLog : 1
+[11:27-13:54:42] [N] [CCSAuth3Info] UseUpdateLog : 1
+[11:27-13:54:42] [N] [CCSAuth3Info] UseDebugLog : 1
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] CloseAfterWriteNormalLog : 1
+[11:27-13:54:42] [N] [CCSAuth3Info] CloseAfterWriteUpdateLog : 1
+[11:27-13:54:42] [N] [CCSAuth3Info] CloseAfterWriteDebugLog : 1
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] TurnOffCSAuth : 0
+[11:27-13:54:42] [N] [CCSAuth3Info] TurnOffSuspend : 0
+[11:27-13:54:42] [N] [CCSAuth3Info] TurnOffAlgorithm : 0
+[11:27-13:54:42] [N] [CCSAuth3Info] TurnOffUnique : 0
+[11:27-13:54:42] [N] [CCSAuth3Info] TurnOffCheckClient : 0
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] CheckClientType : 0
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] ClientReloadMinutePeriod : 10
+[11:27-13:54:42] [N] [CCSAuth3Info] ClientDirectory : GameGuard\Client
+[11:27-13:54:42] [N] [CCSAuth3Info] CodeSectionOnly : 1
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] AllowClientCount : 1
+[11:27-13:54:42] [N] [CCSAuth3Info] WhitePercent : 80
+[11:27-13:54:42] [N] [CCSAuth3Info] BlackPercent : 3
+[11:27-13:54:42] [N] [CCSAuth3Info] ActivationUserNum : 100
+[11:27-13:54:42] [N] [CCSAuth3Info] ActivationMinutePeriod : 120
+[11:27-13:54:42] [N] [CCSAuth3Info] UpdateMinutePeriod : 5
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [CCSAuth3Info] m_bAlwaysUpdate : 0
+[11:27-13:54:42] [N] 
+[11:27-13:54:42] [N] [InitCSAuth3] Min Protocol : 1
+[11:27-13:54:42] [N] [CGGScanManager] Init - DB path : GameGuard\GGScanDB
+[11:27-13:54:42] [N] [CGGScanManager] Detected DB Size : 0
+[11:27-13:54:42] [N] [CGGScanManager] Init success
+[11:27-13:54:42] [N] [InitCSAuth3] InitCSAuth3 success
+[11:27-13:58:14] [D] [Dispatch : 0] Init
+[11:27-13:58:14] [D] [Dispatch : 0] Init return : 0
+[11:27-13:58:14] [D] [Dispatch : 0] Get
+[11:27-13:58:14] [D] [Get   : 0] [e6c14e39] GetPacket   : size 76, ret 0, 0C472991278E522236D578B3481CA144C535D36BC2D76DE322F44D6F57E58022284D4D3BFACBE79D0EBAF451576AB84920BAFE11BDB47754649BC2C48E9DF15450F50A711E0585C2A79A1FC9
+[11:27-13:58:14] [D] [Dispatch : 0] Get return : 0
+[11:27-13:58:15] [D] [Dispatch : 0] Check
+[11:27-13:58:15] [D] [Check : 0] [e6c14e39] CheckPacket : size 76, 0C472991208E502236D578B3481CA144F888009EA1C1FFA7FD15747A2DDE1F8070BB9E0420AFAC083F960F7BA2FE5DF6F299BD55E64917B1D7D9916275111E8F2BDE7238382D2B59B76DBBCA
+[11:27-13:58:15] [D] [CheckPacket:GGVersion] parity1 : 89fd0ff3 / protocol : 1, ggversion : 2010110101, parity2 : 89fd0ff3
+[11:27-13:58:15] [D] [Dispatch : 0] Check return : 0
+[11:27-13:58:15] [D] [Dispatch : 0] Get
+[11:27-13:58:15] [D] [Get   : 1] [e6c14e39] GetPacket   : size 52, ret 0, 0C472991268E502236D578B3481CA14422F44D6F57E58022284D4D3BFACBE79DF200F35B36CC99AF93A39BA9AA75FA9157F177A7
+[11:27-13:58:15] [D] [Dispatch : 0] Get return : 0
+[11:27-13:58:24] [D] [Dispatch : 0] Check
+[11:27-13:58:24] [D] [Check : 1] [e6c14e39] CheckPacket : size 92, C8A0162EA8412F5C82E2468A58835EB84BE9017ADF69143F2EAD621A2E16606DFEF3451772B13AD53F960F7BA2FE5DF6894C35E41A4733948F839545D0EB0F4E47A615961ED51BC32269CF1FE34EAE3FF862FA3713A178C67757B708
+[11:27-13:58:24] [D] [CheckPacket:Uniqval] aa07ec4f b7b908d2
+[11:27-13:58:24] [D] [Dispatch : 0] Check return : 0
+[11:27-13:59:56] [D] [Dispatch : 0] Init
+[11:27-13:59:56] [D] [Dispatch : 0] Init return : 0
+[11:27-13:59:56] [D] [Dispatch : 0] Get
+[11:27-13:59:56] [D] [Get   : 0] [e6c14e39] GetPacket   : size 76, ret 0, 0C472991278E522236D578B3481CA144C535D36BC2D76DE322F44D6F57E58022284D4D3BFACBE79D0EBAF451576AB84920BAFE11BDB47754649BC2C48E9DF15450F50A711E0585C2A79A1FC9
+[11:27-13:59:56] [D] [Dispatch : 0] Get return : 0
+[11:27-14:00:35] [D] [Dispatch : 0] Init
+[11:27-14:00:35] [D] [Dispatch : 0] Init return : 0
+[11:27-14:00:35] [D] [Dispatch : 0] Get
+[11:27-14:00:35] [D] [Get   : 0] [680e0a02] GetPacket   : size 76, ret 0, 0C472991278E522236D578B3481CA1440EC004BFB54E5ADB7C443EA39C6DD22C284D4D3BFACBE79D03FAF18C81A8DB1982C0F1DE57B6C2B5711BC235E087D7E5C6FA2896026221299FE89F7A
+[11:27-14:00:35] [D] [Dispatch : 0] Get return : 0
+[11:27-14:00:53] [D] [Dispatch : 0] Check
+[11:27-14:00:53] [D] [Check : 0] [680e0a02] CheckPacket : size 92, 0C472991208E502236D578B3481CA1446AC42F79F222E6B0D7147AB79F6DA465EB30A55EFBD6D9E03F960F7BA2FE5DF6894C35E41A47339444996827FF163F4007E2F49BB25EE8FFE7FED282F31B85D516F7E82D6527C39D3F106FB2
+[11:27-14:00:53] [D] [CheckPacket:GGVersion] parity1 : 89fd0ff3 / protocol : 1, ggversion : 2010110101, parity2 : 89fd0ff3
+[11:27-14:00:53] [D] [Dispatch : 0] Check return : 0
+[11:27-14:00:53] [D] [Dispatch : 0] Get
+[11:27-14:00:53] [D] [Get   : 1] [680e0a02] GetPacket   : size 68, ret 0, 0C472991268E502236D578B3481CA1447C443EA39C6DD22C284D4D3BFACBE79D6E6860415882BD6E7CD88516850D9FB5659CAB951E0184BDDD30920695ABC531FF416BBE
+[11:27-14:00:53] [D] [Dispatch : 0] Get return : 0
+[11:27-14:01:50] [D] [Dispatch : 0] Check
+[11:27-14:01:50] [D] [Check : 1] [680e0a02] CheckPacket : size 76, 169D6729143ACD5218D7337C20749AA5A356F8ADEAFAD519DF53007D8F61CB6DA44DBFB63C35BE083F960F7BA2FE5DF6894C35E41A4733944B0D2234BD54B28399C0F4C37F792647F7079370
+[11:27-14:01:50] [D] [CheckPacket:Uniqval] a78b7281 f52a8b7a
+[11:27-14:01:50] [D] [Dispatch : 0] Check return : 0
+[11:27-14:03:18] [D] [Dispatch : 0] Get
+[11:27-14:03:18] [D] [Get   : 2] [e6c14e39] GetPacket   : size 68, ret 0, 0C472991268E502236D578B3481CA14422F44D6F57E58022284D4D3BFACBE79DE309FC5F359022497CD88516850D9FB5659CAB951E0184BD0D469F3E1FBB56E97F82838A
+[11:27-14:03:18] [D] [Dispatch : 0] Get return : 0
+[11:27-14:03:21] [D] [Dispatch : 0] Check
+[11:27-14:03:21] [D] [Check : 2] [e6c14e39] CheckPacket : size 84, 06EB941C33D62B3948C1C15560AC57720D72402C3963676D750157955E83138999C0F4C37F7926471236C6DC08C4A4357355732E07AD44C1C4830C9F6E2F3FE55B2856B6E3C816F7C9E33B5AC47FA8ABF7D3F355
+[11:27-14:03:21] [D] [Dispatch : 0] Check return : 0
+[11:27-14:04:32] [D] [Dispatch : 0] Close
+[11:27-14:04:32] [D] [Dispatch : 0] Close return : 0
+[11:27-14:04:32] [D] [Dispatch : 0] Close
+[11:27-14:04:32] [D] [Dispatch : 0] Close return : 0
+[11:27-14:04:57] [D] [Dispatch : 0] Get
+[11:27-14:04:57] [D] [Dispatch : 0] Get return : 3300
+[11:27-14:04:57] [N] [ObjectFunction] ErrorCode insert : 3300
+[11:27-14:04:59] [D] [Dispatch : 0] Close
+[11:27-14:04:59] [D] [Dispatch : 0] Close return : 0
+[11:27-14:04:59] [D] [Dispatch : 0] Close
+[11:27-14:04:59] [D] [Dispatch : 0] Close return : 0
+[11:27-14:08:18] [D] [Dispatch : 0] Get
+[11:27-14:08:18] [D] [Get   : 3] [e6c14e39] GetPacket   : size 68, ret 0, 0C472991268E502236D578B3481CA14422F44D6F57E58022284D4D3BFACBE79DFA1FF4E2AF1E5FD94949DC56D5AC3242B8276A6095DF83590F5C420AAC686FBD1FEF8F11
+[11:27-14:08:18] [D] [Dispatch : 0] Get return : 0
+[11:27-14:08:27] [D] [Dispatch : 0] Check
+[11:27-14:08:27] [D] [Check : 3] [e6c14e39] CheckPacket : size 68, 3CC129074782510E66437A158804A31C99E107945539FEF669D5088FB41555E299C0F4C37F79264784DC82F9A038E43DA2F75CE2254C96886B89394CD698FBD0A7DE1F29
+[11:27-14:08:27] [D] [Dispatch : 0] Check return : 0

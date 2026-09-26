@@ -1,0 +1,119 @@
+KiteKat repack v1.0.2
+
+ENVs list:
+game.premium_for_everybody - if set to 1, then HV pass will not be required
+game.antiweaponswap - if set to 1, then will be lua protection against weapon swap
+game.devildom_no_req - if set to 1, then no devildom requirements (you can join at any level without quests)
+
+
+Lua additional things:
+set_debug(0/1) - Activate additional "debug" mode (Actual flag)
+debug_notice( notice_string ) - Checks if you have debug flag and outputs provided string as private notice if you have. Easy to debug to not annoy players
+is_in_form( location_name ) - checks if you are in predefined location. It has to be dots of any form (circle / square / star / etc). You need to predefine it point by point
+levelupmypets( form_slot ) - levels up creature in specific slot and evolves it
+full_creature_levelup( slot ) - Completely levelup creature and autoevolve
+server_variables() - Outputs server ENV variables in dlg_general
+get_character_info( characterName ) - Outputs info about character in the chat. If no character provided, outputs info about yourself
+BanPlayer(name, duration, reason) - Bans player
+UnbanPlayer(name) - Unbans player
+
+
+Additional views to make it comfortable to work with
+(Check Arcadia database views)
+
+Removed "gmtool" and "coordinator" possible backdoors procedures
+
+Concatenated billing + arcadiainfo databases to telecaster. Now you don't need these 2 databases anymore, everything is being handled directly in telecaster
+
+Increased gold limit to 10T, increased creatures levelcap and exp gain
+
+Additional information: Additional strings were added in english string table.
+IDs used: From 100046001 - to 100110000
+
+Credits to:
+sapir619
+https://www.elitepvpers.com/forum/members/3580047-sapir619.html
+For releasing modified CaptainHerlock binary with increased gold limit / levelcap
+
+Glandu2
+https://www.elitepvpers.com/forum/members/4396731-glandu2.html
+For releasing auth emu & RDB tool
+
+Alucard
+https://www.elitepvpers.com/forum/members/4339893--and-12450-and-12523-and-12459-and-12540-and-12489-.html
+For sharing a lot of info and reuploading stuff
+
+thefear511
+https://www.elitepvpers.com/forum/members/4853760-thefear511.html
+For re-releasing 9.5.2 server (fucking final solution) repack with set-up documentation
+
+
+Revolution team for actual release:
+Ghost Informatics
+Ham999dy
+Ozan
+BackInBlack
+Eleonora
+Jo3laq
+Zone
+Pr0Mac
+
+People without which Revolution wouldn't make their release:
+Xijezu
+Emperor christmas horse
+Glandu2
+MohcenMaher
+Cato
+
+Also all NGemity Team
+
+
+
+Additional credits:
+Maks19973 - For european game client (I dumped his server one and took working nx3/naf from it, so now gaian characters are looking better)
+Hatrick_ - For his repack, from which I took motions and packed rdb tool with prepared structs
+
+
+Special credits for participating in the repack life:
+key_strike - Job level change script
+Ne0@NCarbon - Boss respawn script
+YoSiem - Player ban script and a lot of other scripts
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+
+Quick installation guide:
+1) Download Miscrosoft SQL server (2022 or newer)
+2) Install it (disable firewall before installing to avoid errors)
+3) Install SSMS (Sql Server Management Studtio)
+4) Log in using your windows login
+5) Connect to your database engine
+6) Restore databases: Right click to "Databases" -> "Restore Database..." -> Device -> Find a path to your .bak files (located in the "Backups" directory of the repack)
+7) Do same for every database. You need Arcadia, Auth and Telecaster
+8) Right click to "Security" -> "New" -> "Login"
+9) Select "SQL authentication" and specify password. Check "Enforce password policy"; UNCHECK "Enforce password expiration"
+10) During creation of new login, go to "User Mapping" in the same window (left side) and map it to all databases you restored with next permissions:
+- db_accessadmin
+- db_backupoperator
+- db_datareader
+- db_datawriter
+- db_ddladmin
+- db_owner
+- db_securityadmin
+11) Click "OK"; Create a user mapped to your databases
+12) Encrypt user password using DESUtil (here is a guide how to do that)
+13) Modify gameserver and authserver opt files. Change passsword/login values to ones you made. Password must be encrypted using DESUtil
+14) Create an account (you can use account script I made)
+15) Start auth server
+16) Start gameserver
+17) Log in the game using client

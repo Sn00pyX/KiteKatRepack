@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{98b08390-3dbd-4a19-a4fb-dbfa5bd3a97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\miles">
+      <UniqueIdentifier>{d3812f31-cdbe-43ed-b2fe-7a207061f63a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{3a9ba169-cf41-49c9-819b-7ead314cd1ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\miles">
+      <UniqueIdentifier>{372eb960-75e3-4c5f-9dfa-87cdc0bea466}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="input_xwav.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XDSound.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XMusicPlayer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XSoundManager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="XWave.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="miles\ISoundManager.cpp">
+      <Filter>source\miles</Filter>
+    </ClCompile>
+    <ClCompile Include="miles\PSoundManager.cpp">
+      <Filter>source\miles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\sound\GlobalCutOffFreqTable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\input_xwav.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\LowFilter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\xaudiere.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\XDSound.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\XMusicPlayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\XSoundManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\XStreamReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\XWave.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\miles\ISoundBufferInfoTable.h">
+      <Filter>include\miles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\miles\ISoundManager.h">
+      <Filter>include\miles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\miles\PSoundBufferManager.h">
+      <Filter>include\miles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\miles\PSoundFilterManager.h">
+      <Filter>include\miles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\miles\PSoundManager.h">
+      <Filter>include\miles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\miles\PStreamManager.h">
+      <Filter>include\miles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sound\miles\PStreamReader.h">
+      <Filter>include\miles</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

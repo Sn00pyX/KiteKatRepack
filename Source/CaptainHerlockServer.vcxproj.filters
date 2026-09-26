@@ -1,0 +1,1478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arcadia">
+      <UniqueIdentifier>{0678583d-11e1-4b3e-a139-b7324c033bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{2ed1c702-9d89-4107-9c31-9d6b7f9e6bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XModule">
+      <UniqueIdentifier>{fc994810-c868-4de8-92da-2f186feded8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{e9f5ed7e-300b-4249-94c1-44c122b2ea69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Struct">
+      <UniqueIdentifier>{9f6c07be-698f-4d21-8f93-d57bf322a77c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Message">
+      <UniqueIdentifier>{a5735f81-db23-44e1-85f8-919846e80c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Define">
+      <UniqueIdentifier>{f36941f4-35ca-4b21-b5b2-7624a2e2a693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Memory">
+      <UniqueIdentifier>{9973ba1b-57fa-4d2e-a2d5-206a7a39a3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\NPCProc">
+      <UniqueIdentifier>{e08aa2fd-7391-4419-9c6d-51c7026aecee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Resource">
+      <UniqueIdentifier>{2d22bdfa-d66c-4bbb-a83a-4bab0179f750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script">
+      <UniqueIdentifier>{abb0ce24-0add-41c1-8f65-33759963835a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Rule">
+      <UniqueIdentifier>{84bfb004-2b9a-441c-9634-3ef8cda9395e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Skill">
+      <UniqueIdentifier>{d8fe3e5c-a3e5-45f1-a62e-7d7ad33e5416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Community">
+      <UniqueIdentifier>{db1db88d-239f-41f5-91cb-58db9158804d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World">
+      <UniqueIdentifier>{9b70e791-02ca-483c-94d1-38b903fc9bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\DB">
+      <UniqueIdentifier>{601037dc-1627-479a-931f-3ff886bf1575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameProc">
+      <UniqueIdentifier>{5fe5c067-ff60-4c69-949f-41c36120e326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\DaemonProc">
+      <UniqueIdentifier>{3be02ade-deba-4ab6-a759-fd858347fd85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\DaemonProc\BattleArena">
+      <UniqueIdentifier>{8a0ced50-f585-47a3-91b9-c544decad651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Logic">
+      <UniqueIdentifier>{f511a126-eee6-4006-ae41-4bd4cdbec1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Document">
+      <UniqueIdentifier>{87d3596e-d672-4f7f-8fc5-c55aa20e6de4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LogClient">
+      <UniqueIdentifier>{c2c8c99a-d784-4cc7-8a08-26cde73e372f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SecuritySolution">
+      <UniqueIdentifier>{2bb3d788-45b1-4cd5-a20c-d8512697ce8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SecuritySolution\HackShield">
+      <UniqueIdentifier>{69ca0449-8546-491e-af93-118161b16104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SecuritySolution\GameGuard">
+      <UniqueIdentifier>{304a6aa1-e408-4913-9691-94bf7128ed3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SecuritySolution\GameGuard\x64">
+      <UniqueIdentifier>{c84b96c6-577e-4e07-acf6-216c2423c710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SecuritySolution\XTrap">
+      <UniqueIdentifier>{46c98a4d-8467-46ef-ae14-7f422c6e5e2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArAdditionalProc.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArBoxCollision.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArcadiaServer.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArMove.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArObject.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArOption.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArRegion.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArScheduler.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArSchedulerObject.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArTime.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\ArType.h">
+      <Filter>Arcadia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\Framework\ArcadiaCommandProc.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\Framework\ArcadiaFramework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\Arcadia\Framework\Resource.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\_Utility\bits_scramble.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\_Utility\c_encint.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\_Utility\c_fixed.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\ExclusiveLogicLock.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\External\MD5\global.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\IAcceptor.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\ICipher.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\IConnection.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\IDatagram.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\ILock.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\INetworkEvent.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\IQueue.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\ISocketObject.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\IStream.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\_Utility\khash.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\External\MD5\md5.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\myDC.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\String\nsl.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\String\nslreg.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\String\nsluni.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\rc4_cipher.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\SimpleCipher.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\TimeSyncer.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\w32_util.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\X2DGeometry\X2DAlgorithm.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\X2DGeometry\X2DBasicTypes.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\X2DGeometry\X2DPathFinder.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\X2DGeometry\X2DPolygon.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\X2DGeometry\X2DQuadTree.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XAddr.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XBasicCipher.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XBossWorker.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XConsole.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XDes.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XDijkstra.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XDirectoryScanner.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XEncrypt.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XEnv.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XException.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XExceptionHandler.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XFileUtil.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XFlag.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XGDIHelper.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XIOCP.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XIOCPAcceptor.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XIOCPCommon.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XIOCPConnection.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XIOCPDatagram.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XIOCPStruct.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XLimit.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\_Utility\XMemoryPool.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XProfiler.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XPropertySet.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XQuadScanner.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XRandom.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XRc4Cipher.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\Base\XSimpleProfiler.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XSocket.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XSTLUtil.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XStrDESUtil.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XStringUtil.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XSyncAcceptor.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XSyncStreamConnection.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\Threading\XThread.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\XUtil.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\Zlib\XZlibEncoder.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\Zlib\zconf.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\XModule\Zlib\zlib.h">
+      <Filter>XModule</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameNetwork.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameProc.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\PlayerData.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructBase.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructCreature.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructEventItemManager.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructFieldProp.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructGold.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructInventory.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructItem.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructMisc.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructMonster.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructNPC.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructPet.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructPlayer.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructProc.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructQuest.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructQuestManager.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructRoamer.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructSummon.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructTitle.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructTitleCondition.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Struct\StructTitleManager.h">
+      <Filter>Game\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common Files\ErrorCode.h">
+      <Filter>Game\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Message\GameMessage.h">
+      <Filter>Game\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Message\MessageType.h">
+      <Filter>Game\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Message\SendMessage.h">
+      <Filter>Game\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Define\Constant.h">
+      <Filter>Game\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Define\Extern.h">
+      <Filter>Game\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Define\ItemType.h">
+      <Filter>Game\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Define\UID.h">
+      <Filter>Game\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Memory\DBAllocator.h">
+      <Filter>Game\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Memory\GameAllocator.h">
+      <Filter>Game\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\NPCProc\FieldPropManager.h">
+      <Filter>Game\NPCProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\NPCProc\NPCProc.h">
+      <Filter>Game\NPCProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\AuctionBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\BattleArenaBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\BitmapBox.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\ContentLoader.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\ContentStruct.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\CreatureBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\FieldPropBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\GameContent.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\GameDBUtil.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\ItemBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\ItemEffect.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\ItemInstance.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\KStream.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\KTypes.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\MapDefine.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\MonsterBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\NPCBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\QuestBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\QuestInstance.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\ScriptDefine.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\SkillBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\TerrainPropInfo.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\TerrainSeamlessWorldInfo.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\TimeUtil.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\TitleBase.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\TitleInstance.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\UIDManager.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\Util.h">
+      <Filter>Game\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\lauxlib.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\lua.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\lualib.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\LuaVM.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\ScriptCommon.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\ScriptGuild.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\ScriptItem.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\ScriptMisc.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\ScriptNPC.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\ScriptPlayer.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Script\ScriptQuest.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rule\AgeLimitRule.h">
+      <Filter>Game\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rule\GameRule.h">
+      <Filter>Game\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Resource\GameType.h">
+      <Filter>Game\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Skill\StructSkill.h">
+      <Filter>Game\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Skill\StructSkillProp.h">
+      <Filter>Game\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Community\CommunityLoader.h">
+      <Filter>Game\Community</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Community\CompeteBase.h">
+      <Filter>Game\Community</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Community\CompeteManager.h">
+      <Filter>Game\Community</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Community\GuildManager.h">
+      <Filter>Game\Community</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Community\PartyManager.h">
+      <Filter>Game\Community</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\world\ChannelManager.h">
+      <Filter>Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\world\DungeonManager.h">
+      <Filter>Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\world\InstanceDungeonManager.h">
+      <Filter>Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\World\LocationLoader.h">
+      <Filter>Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\World\StructWorldLocation.h">
+      <Filter>Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Db\ADOConnection.h">
+      <Filter>Game\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Db\DB_Commands.h">
+      <Filter>Game\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Db\GameDBManager.h">
+      <Filter>Game\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameProc\MixBase.h">
+      <Filter>Game\GameProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameProc\MixManager.h">
+      <Filter>Game\GameProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameProc\RandomManager.h">
+      <Filter>Game\GameProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\AuctionManager.h">
+      <Filter>Game\DaemonProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\GlobalVariableManager.h">
+      <Filter>Game\DaemonProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\HuntaholicManager.h">
+      <Filter>Game\DaemonProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\ItemCollector.h">
+      <Filter>Game\DaemonProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\RankingManager.h">
+      <Filter>Game\DaemonProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\RoamingManager.h">
+      <Filter>Game\DaemonProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\ScheduledCommandManager.h">
+      <Filter>Game\DaemonProc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\BattleArena.h">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\BattleArenaCommon.h">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\BattleArenaForExercise.h">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\BattleArenaInstance.h">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\BattleArenaManager.h">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\BattleArenaWithWaitQueue.h">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DaemonProc\ThreadSafeIntMap.h">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Logic\Damage.h">
+      <Filter>Game\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\LogClient\FileLog.h">
+      <Filter>LogClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\LogClient\LogClient.h">
+      <Filter>LogClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\LogClient\LogMessage.h">
+      <Filter>LogClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Library\Internal\LogClient\LogStruct.h">
+      <Filter>LogClient</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\ISecuritySolutionImpl.h">
+      <Filter>SecuritySolution</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\XGameGuard.h">
+      <Filter>SecuritySolution</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\XHackShield.h">
+      <Filter>SecuritySolution</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\XSecuritySolutionManager.h">
+      <Filter>SecuritySolution</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\XXTrap.h">
+      <Filter>SecuritySolution</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\HackShield\AntiCpXSvr.h">
+      <Filter>SecuritySolution\HackShield</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\GameGuard\ggsrv25.h">
+      <Filter>SecuritySolution\GameGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\GameGuard\x64\ggsrv25.h">
+      <Filter>SecuritySolution\GameGuard\x64</Filter>
+    </ClInclude>
+    <ClInclude Include="SecuritySolution\XTrap\Xtrap_S_Interface.h">
+      <Filter>SecuritySolution\XTrap</Filter>
+    </ClInclude>
+    <ClInclude Include="DBPerformanceTracker.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VersionNo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Library\Internal\Arcadia\ArcadiaServer.cpp">
+      <Filter>Arcadia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\Arcadia\ArOption.cpp">
+      <Filter>Arcadia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\Arcadia\ArScheduler.cpp">
+      <Filter>Arcadia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\Arcadia\ArTime.cpp">
+      <Filter>Arcadia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\Arcadia\Framework\ArcadiaCommandProc.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\Arcadia\Framework\ArcadiaFramework.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\ExclusiveLogicLock.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\IAcceptor.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\IQueue.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\External\MD5\md5c.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\myDC.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\String\nsluni.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XBasicCipher.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XConsole.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XDes.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XDirectoryScanner.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XEncrypt.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XEnv.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XException.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XExceptionHandler.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XFileUtil.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XIOCP.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XIOCPAcceptor.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XIOCPConnection.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XIOCPDatagram.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XProfiler.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XPropertySet.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XRandom.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XRc4Cipher.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\Base\XSimpleProfiler.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XStrDESUtil.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XStringUtil.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XSyncStreamConnection.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\Threading\XThread.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\XUtil.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\XModule\Zlib\XZlibEncoder.cpp">
+      <Filter>XModule</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameMain.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameNetwork.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameProc.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\CalculateStat.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructBase.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructCreature.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructEventItemManager.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructFieldProp.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructInventory.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructItem.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructMisc.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructMonster.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructNPC.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructPet.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructPlayer.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructProc.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructQuest.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructQuestManager.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructRoamer.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructSummon.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructTitle.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructTitleCondition.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Struct\StructTitleManager.cpp">
+      <Filter>Game\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Message\GameMessage.cpp">
+      <Filter>Game\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Message\OnTrade.cpp">
+      <Filter>Game\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Message\SendBattleArenaMessage.cpp">
+      <Filter>Game\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Message\SendMessage.cpp">
+      <Filter>Game\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Define\Extern.cpp">
+      <Filter>Game\Define</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Memory\DBAllocator.cpp">
+      <Filter>Game\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Memory\GameAllocator.cpp">
+      <Filter>Game\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NPCProc\FieldPropManager.cpp">
+      <Filter>Game\NPCProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NPCProc\MonsterAI.cpp">
+      <Filter>Game\NPCProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NPCProc\NPCAI.cpp">
+      <Filter>Game\NPCProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NPCProc\NPCProc.cpp">
+      <Filter>Game\NPCProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NPCProc\NPCRespawn.cpp">
+      <Filter>Game\NPCProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NPCProc\PetAI.cpp">
+      <Filter>Game\NPCProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NPCProc\SummonAI.cpp">
+      <Filter>Game\NPCProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\AllowedCommandListLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\AuctionBase.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\AuctionCategoryLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\AuctionLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\AutoAuctionLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\AutoAuctionRegistrationInfoLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\BattleArenaLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\BitmapLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\ChannelLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\CreatureEnhanceLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\CreatureFarmLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\DeathmatchLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\DungeonLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\ETCLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\FieldPropLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\FieldPropSwitchingLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\GameContent.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\GameDBUtil.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\HuntaholicLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\InstanceDungeonLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\ItemLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\KStream.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\MapLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\MixLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\MonsterBase.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\MonsterLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\NPCLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\QuestLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\RandomLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\RankingLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\RoamingLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\ScheduledCommandLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\SecretDungeonLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\SkillLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\StringLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\TerrainPropInfo.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\TerrainSeamlessWorldInfo.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\TimeUtil.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\TitleLoader.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Resource\UIDManager.cpp">
+      <Filter>Game\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\LuaVM.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\ScriptCommon.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\ScriptGuild.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\ScriptItem.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\ScriptMisc.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\ScriptNPC.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\ScriptPlayer.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Script\ScriptQuest.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rule\AgeLimitRule.cpp">
+      <Filter>Game\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rule\GameRule.cpp">
+      <Filter>Game\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Skill\StructSkill.cpp">
+      <Filter>Game\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Skill\StructSkillProp.cpp">
+      <Filter>Game\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Community\CompeteBase.cpp">
+      <Filter>Game\Community</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Community\CompeteManager.cpp">
+      <Filter>Game\Community</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Community\GuildLoader.cpp">
+      <Filter>Game\Community</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Community\GuildManager.cpp">
+      <Filter>Game\Community</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Community\PartyLoader.cpp">
+      <Filter>Game\Community</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Community\PartyManager.cpp">
+      <Filter>Game\Community</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\world\ChannelManager.cpp">
+      <Filter>Game\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\world\DungeonManager.cpp">
+      <Filter>Game\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameDraw.cpp">
+      <Filter>Game\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\world\InstanceDungeonManager.cpp">
+      <Filter>Game\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\World\LocationLoader.cpp">
+      <Filter>Game\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\World\StructWorldLocation.cpp">
+      <Filter>Game\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\ADOConnection.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_Auction.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_BattleArena.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_CharacterList.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_ClearAutoAccoutList.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_ClearDungeonRaidRecord.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_CommercialItemStorage.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_CreateCharacter.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_DeleteCharacter.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_DeleteGuild.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_DeleteParty.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_DeleteQuest.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_DeleteQuestCoolTime.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_EraseUserFromAutoAccountList.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_EventArea.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_Farm.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_Friends.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_GlobalVariable.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertCash.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertFavor.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertGuild.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertItem.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertParty.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertPet.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertQuest.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertQuestCoolTime.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertRandomQuest.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertSkill.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertSummon.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertTitle.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_InsertTitleCondition.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_Login.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_Logout.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_RandomItem.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_Ranking.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_ReadMaxItemIndex.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_ReadStorageList.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_SetGuild.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_SetGuildLeader.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_SetParty.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_SetPartyLeader.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateCharacter.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateClientInfo.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateDungeon.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateDungeonOwnerGuild.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateDungeonRaidTime.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateEventItemDropInfo.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateEventItemSupplyInfo.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateItem.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateItemCode.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateItemOwner.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateLaunchedScheduledCommand.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdatePet.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateQuest.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateQuestCoolTime.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateRandomQuest.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateSkill.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateStorageGold.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateSummon.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateTitle.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\DB_UpdateTitleCondition.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Db\GameDBManager.cpp">
+      <Filter>Game\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameProc\MixManager.cpp">
+      <Filter>Game\GameProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameProc\RandomManager.cpp">
+      <Filter>Game\GameProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\AuctionManager.cpp">
+      <Filter>Game\DaemonProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\GlobalVariableManager.cpp">
+      <Filter>Game\DaemonProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\HuntaholicManager.cpp">
+      <Filter>Game\DaemonProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\ItemCollector.cpp">
+      <Filter>Game\DaemonProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\RankingManager.cpp">
+      <Filter>Game\DaemonProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\RoamingManager.cpp">
+      <Filter>Game\DaemonProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\ScheduledCommandManager.cpp">
+      <Filter>Game\DaemonProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\BattleArena.cpp">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\BattleArenaCommon.cpp">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\BattleArenaForExercise.cpp">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\BattleArenaInstance.cpp">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\BattleArenaManager.cpp">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\BattleArenaWithWaitQueue.cpp">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DaemonProc\ThreadSafeIntMap.cpp">
+      <Filter>Game\DaemonProc\BattleArena</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Logic\Damage.cpp">
+      <Filter>Game\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\LogClient\FileLog.cpp">
+      <Filter>LogClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Library\Internal\LogClient\LogClient.cpp">
+      <Filter>LogClient</Filter>
+    </ClCompile>
+    <ClCompile Include="SecuritySolution\XGameGuard.cpp">
+      <Filter>SecuritySolution</Filter>
+    </ClCompile>
+    <ClCompile Include="SecuritySolution\XHackShield.cpp">
+      <Filter>SecuritySolution</Filter>
+    </ClCompile>
+    <ClCompile Include="SecuritySolution\XSecuritySolutionManager.cpp">
+      <Filter>SecuritySolution</Filter>
+    </ClCompile>
+    <ClCompile Include="SecuritySolution\XXTrap.cpp">
+      <Filter>SecuritySolution</Filter>
+    </ClCompile>
+    <ClCompile Include="SecuritySolution\XTrap\XTrap4Server.c">
+      <Filter>SecuritySolution\XTrap</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainHerlockServer.cpp" />
+    <ClCompile Include="DBPerformanceTracker.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Library\Internal\Arcadia\Framework\ArcadiaFramework.bmp">
+      <Filter>Framework</Filter>
+    </Image>
+    <Image Include="..\..\Library\Internal\Arcadia\Framework\ArcadiaFramework.ico">
+      <Filter>Framework</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Library\Internal\Arcadia\Framework\ArcadiaFramework.rc">
+      <Filter>Framework</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Document\BillingDBScheme.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\BillingProcedure.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\BillingProcedure_For_BillingDB.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\BillingProcedure_Free-SecretFreePass.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\Content.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\DBScheme.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\DELETE_2ND_SKILL.SQL">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\InitializeCharacterSkillAndJob.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\InitializeCharacterSkillOnly.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\InitializeSummonSkillAndLevel.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\SetDungeonOwner.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\SetSummonLevel.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\StoredProcedure.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="Document\StoredProcedure_For_TestServer.sql">
+      <Filter>Document</Filter>
+    </None>
+    <None Include="SecuritySolution\HackShield\3N.mhe">
+      <Filter>SecuritySolution\HackShield</Filter>
+    </None>
+    <None Include="AntiCpXSvr.dll">
+      <Filter>SecuritySolution\HackShield</Filter>
+    </None>
+    <None Include="SecuritySolution\HackShield\HShield.dat">
+      <Filter>SecuritySolution\HackShield</Filter>
+    </None>
+    <None Include="SecuritySolution\HackShield\HSPub.key">
+      <Filter>SecuritySolution\HackShield</Filter>
+    </None>
+    <None Include="SecuritySolution\GameGuard\csauth2.cfg">
+      <Filter>SecuritySolution\GameGuard</Filter>
+    </None>
+    <None Include="SecuritySolution\GameGuard\ggauth60.dll">
+      <Filter>SecuritySolution\GameGuard</Filter>
+    </None>
+    <None Include="SecuritySolution\GameGuard\x64\csauth2.cfg">
+      <Filter>SecuritySolution\GameGuard\x64</Filter>
+    </None>
+    <None Include="SecuritySolution\GameGuard\x64\ggauth60.dll">
+      <Filter>SecuritySolution\GameGuard\x64</Filter>
+    </None>
+    <None Include="XTrap4Server.dll">
+      <Filter>SecuritySolution\XTrap</Filter>
+    </None>
+    <None Include="XTrap4Server_x64.dll">
+      <Filter>SecuritySolution\XTrap</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Document\Lock.txt">
+      <Filter>Document</Filter>
+    </Text>
+    <Text Include="Document\ObjectLifeTime.txt">
+      <Filter>Document</Filter>
+    </Text>
+    <Text Include="Document\TODO_List.txt">
+      <Filter>Document</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

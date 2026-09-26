@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B777075-538F-4687-9062-D9F284B0B9DB}</ProjectGuid>
+    <RootNamespace>SpeedTreeRT</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\lib\vc2010\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\lib\vc2010\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Microsoft DirectX 9.0 SDK %28October 2004%29\Include;C:\Program Files\Microsoft DirectX 9.0 SDK %28October 2004%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Microsoft DirectX 9.0 SDK %28October 2004%29\Include;C:\Program Files\Microsoft DirectX 9.0 SDK %28October 2004%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceCode\BillboardLeaf.cpp" />
+    <ClCompile Include="SourceCode\Branch.cpp" />
+    <ClCompile Include="SourceCode\BranchGeometry.cpp" />
+    <ClCompile Include="SourceCode\BranchInfo.cpp" />
+    <ClCompile Include="SourceCode\Camera.cpp" />
+    <ClCompile Include="SourceCode\FileAccess.cpp" />
+    <ClCompile Include="SourceCode\FrondEngine.cpp" />
+    <ClCompile Include="SourceCode\IndexedGeometry.cpp" />
+    <ClCompile Include="SourceCode\LeafGeometry.cpp" />
+    <ClCompile Include="SourceCode\LeafInfo.cpp" />
+    <ClCompile Include="SourceCode\LeafLod.cpp" />
+    <ClCompile Include="SourceCode\LightingEngine.cpp" />
+    <ClCompile Include="SourceCode\ProjectedShadow.cpp" />
+    <ClCompile Include="SourceCode\SFileNameEnDe.cpp" />
+    <ClCompile Include="SourceCode\SimpleBillboard.cpp" />
+    <ClCompile Include="SourceCode\SpeedTreeRT.cpp" />
+    <ClCompile Include="SourceCode\TreeEngine.cpp" />
+    <ClCompile Include="SourceCode\TreeInfo.cpp" />
+    <ClCompile Include="SourceCode\WindEngine.cpp" />
+    <ClCompile Include="SourceCode\WindInfo.cpp" />
+    <ClCompile Include="SourceCode\LibSpline_Source\IdvSpline.cpp" />
+    <ClCompile Include="SourceCode\LibRandom_Source\ExtendedReal.cpp" />
+    <ClCompile Include="SourceCode\LibRandom_Source\IdvRandom.cpp" />
+    <ClCompile Include="SourceCode\LibRandom_Source\RobertDavies_Random.cpp" />
+    <ClCompile Include="SourceCode\LibVector_Source\Region.cpp" />
+    <ClCompile Include="SourceCode\LibVector_Source\RotTransform.cpp" />
+    <ClCompile Include="SourceCode\LibVector_Source\Transform.cpp" />
+    <ClCompile Include="SourceCode\LibVector_Source\Vec.cpp" />
+    <ClCompile Include="SourceCode\LibVector_Source\Vec3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SourceCode\BillboardLeaf.h" />
+    <ClInclude Include="SourceCode\BranchGeometry.h" />
+    <ClInclude Include="SourceCode\Debug.h" />
+    <ClInclude Include="SourceCode\Endian.h" />
+    <ClInclude Include="SourceCode\EvalCode.h" />
+    <ClInclude Include="SourceCode\EvalTest.h" />
+    <ClInclude Include="SourceCode\FileAccess.h" />
+    <ClInclude Include="SourceCode\FrondEngine.h" />
+    <ClInclude Include="SourceCode\IndexedGeometry.h" />
+    <ClInclude Include="SourceCode\Instances.h" />
+    <ClInclude Include="SourceCode\LeafGeometry.h" />
+    <ClInclude Include="SourceCode\LeafLod.h" />
+    <ClInclude Include="SourceCode\LightingEngine.h" />
+    <ClInclude Include="SourceCode\ProjectedShadow.h" />
+    <ClInclude Include="SourceCode\Random.h" />
+    <ClInclude Include="SourceCode\SFileNameEnDe.h" />
+    <ClInclude Include="SourceCode\SimpleBillboard.h" />
+    <ClInclude Include="SourceCode\SpeedTreeRT.h" />
+    <ClInclude Include="SourceCode\StructsInfo.h" />
+    <ClInclude Include="SourceCode\StructsSupport.h" />
+    <ClInclude Include="SourceCode\TreeEngine.h" />
+    <ClInclude Include="SourceCode\UpVector.h" />
+    <ClInclude Include="SourceCode\WindEngine.h" />
+    <ClInclude Include="SourceCode\LibSpline_Source\IdvSpline.h" />
+    <ClInclude Include="SourceCode\LibRandom_Source\ExtendedReal.h" />
+    <ClInclude Include="SourceCode\LibRandom_Source\IdvRandom.h" />
+    <ClInclude Include="SourceCode\LibRandom_Source\RobertDavies_Random.h" />
+    <ClInclude Include="SourceCode\LibGlobals_Source\IdvGlobals.h" />
+    <ClInclude Include="SourceCode\LibFilename_Source\IdvFilename.h" />
+    <ClInclude Include="SourceCode\LibVector_Source\IdvFastMath.h" />
+    <ClInclude Include="SourceCode\LibVector_Source\IdvVector.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
